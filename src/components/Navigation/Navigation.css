@@ -1,0 +1,13 @@
+nav {
+  width: 100%;
+  /* background-color: #9e9e9e42; */
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: black;
+}
