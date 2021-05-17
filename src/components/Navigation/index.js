@@ -7,7 +7,7 @@ function Navigation() {
   return (
     <nav>
       <NavLink to='/about-me' className='nav-link'>About Me</NavLink>
-      <NavLink to='/portfolio' className='nav-link'>Portfolio</NavLink>
+      <NavLink to='/projects' className='nav-link'>Projects</NavLink>
       <NavLink to='/skills' className='nav-link'>Skills</NavLink>
       <NavLink to='/contact' className='nav-link'>Contact</NavLink>
     </nav>
