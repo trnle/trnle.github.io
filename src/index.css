@@ -17,3 +17,9 @@ body {
     monospace; */
   /* font-family: 'Open Sans'; */
 /* } */
+
+hr {
+  color: #c0bebe;
+  opacity: 0.2;
+  margin-top: 20px;
+}

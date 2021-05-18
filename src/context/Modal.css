@@ -21,11 +21,11 @@
 
 #modal-content {
   position: relative;
-  padding: 100px;
+  padding: 75px;
   margin-top: 250px;
   width: 60%;
   background-color:white;
   white-space: nowrap;
-  overflow: inherit;
+  overflow: hidden;
   border-radius: 10px;
 }

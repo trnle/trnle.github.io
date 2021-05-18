@@ -1,11 +1,12 @@
-.project-gallery {
-  display: grid;
-  grid-template-columns: auto;
-  grid-template-rows: 1fr;
-  overflow: scroll;
-  grid-column-gap: 1rem;
+.project-overview {
+  display: inline-block;
 }
 
-.project-image {
-  align-items: center;
+.view-btn {
+  background-color: #c0bebe;
+  border-radius: 8px;
+}
+
+.view-btn:hover {
+  background-color: black;
 }

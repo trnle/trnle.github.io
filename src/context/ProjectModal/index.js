@@ -15,37 +15,37 @@ function ProjectModal({ icon, altText, title, snippet, tech, description, github
 
   return (
     <div className='project-modal'>
-      <button onClick={viewProject}>View</button>
+      <button className='view-btn' onClick={viewProject}>View</button>
       {showModal && (
         <Modal onClose={exitProject}>
           <div className='project-container'>
-            <div className='fixed'>
+            <div className='overview'>
               <img src={icon} alt={altText} height='80' />
+              <div>
+                <h4>{title}</h4>
+                <p>{snippet}</p>
+              </div>
             </div>
-            <div className='fixed'>
-              {title}
-            </div>
-            <div className='fixed'>
-              {snippet}
-            </div>
-            <div className='tech-used fixed'>
-              <p>Tech</p>
+            <hr />
+            <div className='tech-used'>
+              <h4>Tech</h4>
               <p>{tech}</p>
             </div>
             <div className='project-gallery'>
+              {/* Create image carousel */}
               {images.map(image => {
                 return (
-                  <img className='project-image' src={image} alt={altText} height='420' />
+                  <img className='project-image' src={image} alt={altText} height='480' />
                 )
               })}
             </div>
-            <div className='fixed'>
+            <div className='description'>
               {description}
             </div>
-            <button className='fixed'>
+            <button className='github'>
               <a href={githubURL}>GitHub</a>
             </button>
-            <button className='fixed'>
+            <button className='live-link'>
               <a href={liveLink}>Live Link</a>
             </button>
           </div>
