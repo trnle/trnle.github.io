@@ -23,15 +23,16 @@ function ProjectModal({ icon, altText, title, snippet, tech, description, github
               <p>Tech</p>
               <p>{tech}</p>
             </div>
-            <div>
-              {images.map(image => {
-                return (
-                  <div>
-                    <img src={image} alt="" height='200'/>
-                  </div>
-                )
-              })}
-              {images}
+            <div className='project-gallery'>
+              <div>
+                {images.map(image => {
+                  return (
+                    <div>
+                      <img src={image} alt="" height='200'/>
+                    </div>
+                  )
+                })}
+              </div>
             </div>
             <div>
               {description}

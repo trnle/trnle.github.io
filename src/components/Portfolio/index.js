@@ -2,6 +2,9 @@ import ProjectTile from '../ProjectTile';
 import pupprIcon from '../../images/puppr/puppr-icon.png';
 import home from '../../images/puppr/home.png';
 import explore from '../../images/puppr/explore.png';
+import createAlbum from '../../images/puppr/create-album.png';
+import commentsSection from '../../images/puppr/comments-section.png';
+
 import ggPlaysIcon from '../../images/ggPlays/ggPlays-icon.png';
 import './Portfolio.css';
 
@@ -18,7 +21,7 @@ function Portfolio() {
         description='test test test'
         githubURL='https://github.com/trnle/puppr'
         liveLink='https://pupproni.herokuapp.com/'
-        images={[home, explore]}
+        images={[home, explore, createAlbum, commentsSection]}
       />
       <ProjectTile
         icon={ggPlaysIcon}
