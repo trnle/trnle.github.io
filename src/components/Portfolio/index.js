@@ -1,8 +1,8 @@
 import ProjectTile from '../ProjectTile';
-import pupprIcon from '../../images/puppr/pupprIcon.png';
+import pupprIcon from '../../images/puppr/puppr-icon.png';
 import home from '../../images/puppr/home.png';
 import explore from '../../images/puppr/explore.png';
-import ggPlaysIcon from '../../images/ggPlays/ggPlaysIcon.png';
+import ggPlaysIcon from '../../images/ggPlays/ggPlays-icon.png';
 import './Portfolio.css';
 
 function Portfolio() {
