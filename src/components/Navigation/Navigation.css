@@ -5,6 +5,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  cursor: pointer;
 }
 
 .nav-link {
