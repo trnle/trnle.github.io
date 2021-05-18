@@ -21,7 +21,7 @@ function Portfolio() {
         description='test test test'
         githubURL='https://github.com/trnle/puppr'
         liveLink='https://pupproni.herokuapp.com/'
-        images={[home, explore, createAlbum, commentsSection]}
+        images={[home]}
       />
       <ProjectTile
         icon={ggPlaysIcon}
