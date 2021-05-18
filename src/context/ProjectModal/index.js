@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Modal } from '../../context/Modal';
 
-function ProjectModal({ icon, altText, title, snippet, tech, description, githubURL, liveLink }) {
+function ProjectModal({ icon, altText, title, snippet, tech, description, githubURL, liveLink, images }) {
   const [showModal, setShowModal] = useState(false);
 
   return (
@@ -22,6 +22,16 @@ function ProjectModal({ icon, altText, title, snippet, tech, description, github
             <div className='tech-used'>
               <p>Tech</p>
               <p>{tech}</p>
+            </div>
+            <div>
+              {images.map(image => {
+                return (
+                  <div>
+                    <img src={image} alt="" height='200'/>
+                  </div>
+                )
+              })}
+              {images}
             </div>
             <div>
               {description}

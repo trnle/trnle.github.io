@@ -1,6 +1,6 @@
 import ProjectModal from '../../context/ProjectModal';
 
-function ProjectTile({ icon, altText, title, snippet, tech, description, githubURL, liveLink }) {
+function ProjectTile({ icon, altText, title, snippet, tech, description, githubURL, liveLink, images }) {
   return (
     <div className='project-tile'>
       <div className='project-icon'>
@@ -19,6 +19,7 @@ function ProjectTile({ icon, altText, title, snippet, tech, description, githubU
         description={description}
         githubURL={githubURL}
         liveLink={liveLink}
+        images={images}
       />
     </div>
   )
