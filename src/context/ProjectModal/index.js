@@ -22,15 +22,27 @@ function ProjectModal({ icon, altText, title, snippet, tech, description, github
             <button className='exit-modal-btn' onClick={exitProject}>X</button> 
             <div className='overview'>
               <img src={icon} alt={altText} height='80' />
-              <div>
-                <h4>{title}</h4>
+              <div className='overview-title-snippet'>
+                <h2>{title}</h2>
                 <p>{snippet}</p>
               </div>
+              <button className='github'>
+                <a href={githubURL}>GitHub</a>
+              </button>
+              <button className='live-link'>
+                <a href={liveLink}>Live Link</a>
+              </button>
             </div>
             <hr />
             <div className='tech-used'>
               <h4>Tech</h4>
-              <p>{tech}</p>
+              <div className='tech-stack'>
+                {tech.map(tool => {
+                  return (
+                    <p>{tool}</p>
+                  )
+                })}
+              </div>
             </div>
             <div className='project-gallery'>
               {/* Create image carousel */}
@@ -43,12 +55,7 @@ function ProjectModal({ icon, altText, title, snippet, tech, description, github
             <div className='description'>
               {description}
             </div>
-            <button className='github'>
-              <a href={githubURL}>GitHub</a>
-            </button>
-            <button className='live-link'>
-              <a href={liveLink}>Live Link</a>
-            </button>
+            
           </div>
         </Modal>
       )}

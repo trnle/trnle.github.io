@@ -16,7 +16,7 @@ function Portfolio() {
       <div id='portfolio-container'>
         <div className='overview'>
           <img src={pupprIcon} alt='' height='80' />
-          <div>
+          <div className='overview-title-snippet'>
             <h4>Puppr</h4>
             <p>very brief description</p>
           </div>
@@ -26,7 +26,7 @@ function Portfolio() {
           altText='Puppr Icon showing dog'
           title='Puppr'
           snippet='very brief description'
-          tech='React Redux Express JavaScript HTML CSS'
+          tech={['React', 'Redux', 'Express', 'JavaScript', 'HTML', 'CSS']}
           description='test test test'
           githubURL='https://github.com/trnle/puppr'
           liveLink='https://pupproni.herokuapp.com/'
@@ -34,7 +34,7 @@ function Portfolio() {
         />
         <div className='overview'>
           <img src={ggPlaysIcon} alt='' height='80' />
-          <div>
+          <div className='overview-title-snippet'>
             <h4>ggPlays</h4>
             <p>very brief description</p>
           </div>
@@ -44,7 +44,7 @@ function Portfolio() {
           altText='ggPlays icon'
           title='ggPlays'
           snippet='very brief description'
-          tech='Sequelize Express JavaScript HTML CSS'
+          tech={['Sequelize', 'Express', 'JavaScript', 'HTML', 'CSS']}
           description='test test test'
           githubURL='https://github.com/Hieu-Ma/ggplays/'
           liveLink='https://ggplays.herokuapp.com/'

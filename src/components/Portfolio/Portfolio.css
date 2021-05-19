@@ -1,5 +1,6 @@
 #portfolio {
   margin-top: 500px;
+  margin-bottom: 100px;
 }
 
 #portfolio-container, #portfolio h3 {
@@ -16,11 +17,28 @@
 .overview img {
   box-shadow: 1px 1px 5px -3.5px black;
   border-radius: 13px;
-  margin-right: 7px;
+  margin-right: 20px;
 }
 
-div h4, div p {
-  margin: 10px;
+div h4, .overview-title-snippet p, div h2 {
+  margin: 10px 10px 10px 0;
+}
+
+.overview-title-snippet p {
+  color: #768390;
+}
+
+.tech-stack {
+  margin-right: 20px;
+}
+
+.tech-stack p {
+  display: inline-flex;
+  border: 1px solid rgba(173, 186, 199, 0.286);
+  border-radius: 8px;
+  margin: 0 8px 35px 0;
+  padding: 5px;
+  font-size: 14px;
 }
 
 .view-btn {
@@ -47,7 +65,25 @@ div h4, div p {
   border: 1px solid #363f47;
   color: #adbac7;
   font-weight: bold;
+  font-size: 14px;
+}
+
+.tech-used {
+  margin-top: 17px;
+}
+
+.github, .live-link {
+  float: right;
+  margin: auto;
+  background-color: #363f47;
+  border: 1px solid #363f47;
+  color: #adbac7;
+  font-weight: bold;
+  border-radius: 20px;
   font-size: 16px;
 }
 
-
+.github a, .live-link a {
+  text-decoration: none;
+  color: #adbac7;
+}

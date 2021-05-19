@@ -20,14 +20,21 @@
 }
 
 #modal-content {
-  height: 115vh;
-  position: relative;
+  height: 87vh;
+  position: absolute;
   padding: 35px;
-  margin-top: 250px;
+  bottom: 0;
   width: 60%;
   background-color: #22272e;
   white-space: nowrap;
-  /* overflow: hidden; */
   border-radius: 10px;
   overflow-y: auto;
 }
+
+/* @media (min-height: 500px) {
+  #modal-content { height: 400px; }
+}
+
+@media (min-height: 800px) {
+  #modal-content{ height: 600px; }
+} */
