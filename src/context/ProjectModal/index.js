@@ -25,6 +25,7 @@ function ProjectModal({ icon, altText, title, snippet, tech, description, github
                 <h4>{title}</h4>
                 <p>{snippet}</p>
               </div>
+              <button className='exit-modal-btn' onClick={exitProject}>X</button> 
             </div>
             <hr />
             <div className='tech-used'>

@@ -16,12 +16,12 @@
   right: 0;
   left: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 #modal-content {
   position: relative;
-  padding: 75px;
+  padding: 35px;
   margin-top: 250px;
   width: 60%;
   background-color:white;
