@@ -25,27 +25,27 @@ div h4, div p {
 
 .view-btn {
   border-radius: 20px;
-  background-color: #edf2f7;
-  border: 1px solid #edf2f7;
-  color: #171923;
+  background-color: #363f47;
+  border: 1px solid #363f47;
+  color: #adbac7;
   font-weight: bold;
   font-size: 14px;
   padding: 6px 15px;
 }
 
 .view-btn:hover, .exit-modal-btn:hover{
-  background-color: #eaecee;
+  background-color: #444f5a;
 }
 
 .exit-modal-btn {
-  align-self: flex-end;
-  margin: auto;
+  float: right;
+  margin: 0 auto;
   height: 30px;
   width: 30px;
   border-radius: 50%;
-  background-color: #edf2f7;
-  border: 1px solid #edf2f7;
-  /* padding: 10px; */
+  background-color: #363f47;
+  border: 1px solid #363f47;
+  color: #adbac7;
   font-weight: bold;
   font-size: 16px;
 }

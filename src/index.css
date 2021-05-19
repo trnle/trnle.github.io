@@ -1,5 +1,4 @@
 html {
-  margin: 0 130px 50px 130px;
   scroll-behavior: smooth;
 }
 
@@ -10,6 +9,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #22272e;
+  color: #adbac7;
 }
 
 /* code { */
@@ -19,7 +20,11 @@ body {
 /* } */
 
 hr {
-  color: #c0bebe;
-  opacity: 0.2;
+  color: #adbac7;
+  opacity: 0.08;
   margin-top: 20px;
+}
+
+button:hover {
+  transition-duration: 0.3s;
 }
