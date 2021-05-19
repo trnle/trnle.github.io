@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/trnle/trnle.github.io/static/css/main.60141ab3.chunk.css",
+    "main.js": "/trnle/trnle.github.io/static/js/main.9c0074a6.chunk.js",
+    "main.js.map": "/trnle/trnle.github.io/static/js/main.9c0074a6.chunk.js.map",
+    "runtime-main.js": "/trnle/trnle.github.io/static/js/runtime-main.fceac79b.js",
+    "runtime-main.js.map": "/trnle/trnle.github.io/static/js/runtime-main.fceac79b.js.map",
+    "static/js/2.7c0a6869.chunk.js": "/trnle/trnle.github.io/static/js/2.7c0a6869.chunk.js",
+    "static/js/2.7c0a6869.chunk.js.map": "/trnle/trnle.github.io/static/js/2.7c0a6869.chunk.js.map",
+    "index.html": "/trnle/trnle.github.io/index.html",
+    "static/css/main.60141ab3.chunk.css.map": "/trnle/trnle.github.io/static/css/main.60141ab3.chunk.css.map",
+    "static/js/2.7c0a6869.chunk.js.LICENSE.txt": "/trnle/trnle.github.io/static/js/2.7c0a6869.chunk.js.LICENSE.txt",
+    "static/media/ggPlays-home.697bf706.png": "/trnle/trnle.github.io/static/media/ggPlays-home.697bf706.png",
+    "static/media/home.fd0479b9.png": "/trnle/trnle.github.io/static/media/home.fd0479b9.png",
+    "static/media/puppr-icon.18eeb025.png": "/trnle/trnle.github.io/static/media/puppr-icon.18eeb025.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.fceac79b.js",
+    "static/js/2.7c0a6869.chunk.js",
+    "static/css/main.60141ab3.chunk.css",
+    "static/js/main.9c0074a6.chunk.js"
+  ]
+}
