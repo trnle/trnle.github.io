@@ -1,8 +1,8 @@
 import pupprIcon from '../../images/puppr/puppr-icon.png';
 import home from '../../images/puppr/home.png';
-import explore from '../../images/puppr/explore.png';
-import createAlbum from '../../images/puppr/create-album.png';
-import commentsSection from '../../images/puppr/comments-section.png';
+// import explore from '../../images/puppr/explore.png';
+// import createAlbum from '../../images/puppr/create-album.png';
+// import commentsSection from '../../images/puppr/comments-section.png';
 import ggPlaysHome from '../../images/ggPlays/ggPlays-home.png';
 
 import ggPlaysIcon from '../../images/ggPlays/ggPlays-icon.png';
