@@ -21,11 +21,13 @@
 }
 
 div h4, .overview-title-snippet p, div h2 {
-  margin: 10px 10px 10px 0;
+  margin: 4px 10px 10px 0;
 }
 
 .overview-title-snippet p {
   color: #768390;
+  word-break: normal;
+  white-space: normal;
 }
 
 .tech-stack {
@@ -74,7 +76,8 @@ div h4, .overview-title-snippet p, div h2 {
 
 .github, .live-link {
   float: right;
-  margin: auto;
+  margin-top: 6px;
+  margin-right: 20px;
   background-color: #363f47;
   border: 1px solid #363f47;
   color: #adbac7;

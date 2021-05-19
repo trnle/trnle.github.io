@@ -15,25 +15,25 @@ function Portfolio() {
       <h3>Portfolio</h3>
       <div id='portfolio-container'>
         <div className='overview'>
-          <img src={pupprIcon} alt='' height='80' />
+          <img src={pupprIcon} alt='' height='70' />
           <div className='overview-title-snippet'>
             <h4>Puppr</h4>
-            <p>very brief description</p>
+            <p>Puppr, inspired by Flickr..</p>
           </div>
         </div>
         <ProjectModal
           icon={pupprIcon}
           altText='Puppr Icon showing dog'
           title='Puppr'
-          snippet='very brief description'
+          snippet='Puppr, inspired by Flickr, is a photo sharing website centered around dogs. Users can upload and view photos, comment on photos, and create their own photo albums for dogs.'
           tech={['React', 'Redux', 'Express', 'JavaScript', 'HTML', 'CSS']}
-          description='test test test'
+          description='thorough rundown of project goes here? challenges.. etc.'
           githubURL='https://github.com/trnle/puppr'
           liveLink='https://pupproni.herokuapp.com/'
           images={[home]}
         />
         <div className='overview'>
-          <img src={ggPlaysIcon} alt='' height='80' />
+          <img src={ggPlaysIcon} alt='' height='70' />
           <div className='overview-title-snippet'>
             <h4>ggPlays</h4>
             <p>very brief description</p>

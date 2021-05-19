@@ -23,15 +23,15 @@ function ProjectModal({ icon, altText, title, snippet, tech, description, github
             <div className='overview'>
               <img src={icon} alt={altText} height='80' />
               <div className='overview-title-snippet'>
+                <button className='github'>
+                  <a href={githubURL}>GitHub</a>
+                </button>
+                <button className='live-link'>
+                  <a href={liveLink}>Live Link</a>
+                </button>
                 <h2>{title}</h2>
                 <p>{snippet}</p>
               </div>
-              <button className='github'>
-                <a href={githubURL}>GitHub</a>
-              </button>
-              <button className='live-link'>
-                <a href={liveLink}>Live Link</a>
-              </button>
             </div>
             <hr />
             <div className='tech-used'>
