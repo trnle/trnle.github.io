@@ -18,10 +18,10 @@ function ProjectModal({ icon, altText, title, snippet, tech, description, github
       <button className='view-btn' onClick={viewProject}>View</button>
       {showModal && (
         <Modal onClose={exitProject}>
-          <div className='project-container'>
+          <div className='project-container w3-animate-opacity'>
             <button className='exit-modal-btn' onClick={exitProject}>X</button> 
             <div className='overview-modal'>
-              <img src={icon} alt={altText} height='80' />
+              <img src={icon} alt={altText} height='87' />
               <div className='overview-title-snippet'>
                 <div className='gh-ll-btns'>
                   <button className='github'>
@@ -36,7 +36,7 @@ function ProjectModal({ icon, altText, title, snippet, tech, description, github
               </div>
             </div>
             <hr />
-            <div className='tech-used'>
+            <div className='tech-use'>
               <h4>Tech</h4>
               <div className='tech-stack'>
                 {tech.map(tool => {
@@ -52,8 +52,8 @@ function ProjectModal({ icon, altText, title, snippet, tech, description, github
               {/* Create image carousel */}
               {images.map(image => {
                 return (
-                  <div key={image} className='slideshow-images'>
-                    <img className='project-image' src={image} alt={altText} height='445' />
+                  <div key={image} className='slideshow-images w3-animate-right'>
+                    <img className='project-image' src={image} alt={altText} height='440' />
                   </div>
                 )
               })}

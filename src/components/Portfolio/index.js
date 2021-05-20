@@ -55,7 +55,6 @@ function Portfolio() {
               images={[ggPlaysHome, game, reviews, shelves]}
             />
           </div>
-          
         </div>
       </div>
     </div>
