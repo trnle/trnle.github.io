@@ -4,7 +4,7 @@ function AboutMe() {
   return (
     <div id='about-me'>
       <div id='test'>
-        <p>Hi, I'm Tran!</p>
+        <h2>Hi, I'm Tran!</h2>
       </div>
     </div> 
   )
