@@ -12,7 +12,7 @@ function ProjectModal({ icon, altText, title, snippet, tech, description, github
     setShowModal(false);
     document.body.style.overflow = 'scroll';
   }
-
+  
   return (
     <div className='project-modal'>
       <button className='view-btn' onClick={viewProject}>View</button>
@@ -41,7 +41,9 @@ function ProjectModal({ icon, altText, title, snippet, tech, description, github
               <div className='tech-stack'>
                 {tech.map(tool => {
                   return (
-                    <p>{tool}</p>
+                    <div key={tool} className='tech-container'>
+                      <p>{tool}</p>
+                    </div>
                   )
                 })}
               </div>
@@ -50,8 +52,8 @@ function ProjectModal({ icon, altText, title, snippet, tech, description, github
               {/* Create image carousel */}
               {images.map(image => {
                 return (
-                  <div key={image}>
-                    <img className='project-image' src={image} alt={altText} height='480' />
+                  <div key={image} className='slideshow-images'>
+                    <img className='project-image' src={image} alt={altText} height='445' />
                   </div>
                 )
               })}

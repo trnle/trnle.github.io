@@ -1,13 +1,15 @@
-import pupprIcon from '../../images/puppr/puppr-icon.png';
-import home from '../../images/puppr/home.png';
-// import explore from '../../images/puppr/explore.png';
-// import createAlbum from '../../images/puppr/create-album.png';
-// import commentsSection from '../../images/puppr/comments-section.png';
-import ggPlaysHome from '../../images/ggPlays/ggPlays-home.png';
-
-import ggPlaysIcon from '../../images/ggPlays/ggPlays-icon.png';
-import './Portfolio.css';
 import ProjectModal from '../../context/ProjectModal';
+import pupprIcon from '../../images/puppr/puppr-icon.png';
+import pupprHome from '../../images/puppr/puppr-home.png';
+import explore from '../../images/puppr/explore.png';
+import createAlbum from '../../images/puppr/create-album.png';
+import commentsSection from '../../images/puppr/comments-section.png';
+import ggPlaysIcon from '../../images/ggPlays/ggPlays-icon.png';
+import ggPlaysHome from '../../images/ggPlays/ggPlays-home.png';
+import game from '../../images/ggPlays/game.png';
+import reviews from '../../images/ggPlays/reviews.png';
+import shelves from '../../images/ggPlays/shelves.png';
+import './Portfolio.css';
 
 function Portfolio() {
   return (
@@ -30,7 +32,7 @@ function Portfolio() {
               description='thorough rundown of project goes here? challenges.. etc.'
               githubURL='https://github.com/trnle/puppr'
               liveLink='https://pupproni.herokuapp.com/'
-              images={[home]}
+              images={[pupprHome, explore, createAlbum, commentsSection ]}
             />
           </div>
         </div>
@@ -50,7 +52,7 @@ function Portfolio() {
               description='test test test'
               githubURL='https://github.com/Hieu-Ma/ggplays/'
               liveLink='https://ggplays.herokuapp.com/'
-              images={[ggPlaysHome]}
+              images={[ggPlaysHome, game, reviews, shelves]}
             />
           </div>
           

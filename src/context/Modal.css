@@ -24,11 +24,12 @@
   position: absolute;
   padding: 35px;
   bottom: 0;
-  width: 60%;
+  width: 63%;
   background-color: #22272e;
   white-space: nowrap;
   border-radius: 10px;
   overflow-y: auto;
+  overflow-x: initial;
 }
 
 /* @media (min-height: 500px) {

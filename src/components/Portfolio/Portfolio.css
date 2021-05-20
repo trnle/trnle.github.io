@@ -12,7 +12,7 @@
 .view-modal {
   display: flex;
   align-items: center;
-  margin: 0 20px;
+  margin: 0 45px;
 }
 
 .overview, .overview-modal {
@@ -21,18 +21,17 @@
 }
 
 .overview {
-  margin-left: 50px;
+  margin-left: 45px;
 }
 
 .overview img, .overview-modal img {
   box-shadow: 1px 1px 5px -3.5px black;
-  border-radius: 13px;
+  border-radius: 15px;
   margin-right: 20px;
 }
 
 div h4, .overview-title-snippet p, .title-snippet p, div h2 {
   margin: 4px 0px 10px 0;
-  margin-right: 0;
 }
 
 .overview-title-snippet p, .title-snippet p {
@@ -51,13 +50,17 @@ div h4, .overview-title-snippet p, .title-snippet p, div h2 {
   margin-right: 20px;
 }
 
-.tech-stack p {
+.tech-container {
   display: inline-flex;
   border: 1px solid rgba(173, 186, 199, 0.286);
   border-radius: 8px;
   margin: 0 8px 20px 0;
-  padding: 5px;
+  padding: 0 10px;
   font-size: 14px;
+}
+
+.tech-container p {
+  margin: 5px;
 }
 
 .view-btn {
@@ -110,4 +113,29 @@ div h4, .overview-title-snippet p, .title-snippet p, div h2 {
 .github a, .live-link a {
   text-decoration: none;
   color: #adbac7;
+}
+
+.project-gallery {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+  overflow-x: auto;
+  width: 100%;
+}
+
+.slideshow-images {
+  display: inline-flex;
+  justify-content: center;
+  background-color: #2b313a;
+  border-radius: 18px;
+  padding: 30px;
+  margin-right: 20px;
+}
+
+.slideshow-images img {
+  border-radius: 7px;
+}
+
+.description {
+  margin-top: 20px;
 }
