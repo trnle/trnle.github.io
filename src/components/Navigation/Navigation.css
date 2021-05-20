@@ -14,10 +14,14 @@ nav {
 }
 
 nav div {
-  margin: 0 65px;
+  text-align: center;
+  margin: 0px 30px;
+  padding: 15px 0;
+  width: 100px;
 }
 
 nav div:hover {
   color: #a5b2be;
-  transition-duration: 0.2s;
+  transition-duration: 0.1s;
+  border-bottom: 2px solid #a5b2be;
 }

@@ -39,3 +39,11 @@ button:hover {
   background-color: #545d68;
   border: 1px solid #909dab;
 }
+
+h3 {
+  font-size: 23px;
+  display: flex;
+  justify-content: center;
+  color: #cdd9e5;
+  font-weight: bold;
+}

@@ -2,12 +2,11 @@ import './AboutMe.css';
 
 function AboutMe() {
   return (
-    <div id='am-container'>
-      <div id='about-me'>
-        <p>helleo</p>
+    <div id='about-me'>
+      <div id='test'>
+        <p>Hi, I'm Tran!</p>
       </div>
-    </div>
-    
+    </div> 
   )
 }
 
