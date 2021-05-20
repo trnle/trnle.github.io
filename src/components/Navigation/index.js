@@ -4,11 +4,19 @@ import './Navigation.css';
 function Navigation() {
   return (
     <nav>
-      <Link to="about-me">About Me</Link>
-      <Link to="portfolio">Portfolio</Link>
-      <Link to="skills">Skills</Link>
-      <Link to="contact">Contact</Link>
-    </nav>
+      <div>
+        <Link to="about-me">About Me</Link>
+      </div>
+      <div>
+        <Link to="portfolio">Portfolio</Link>
+      </div>
+      <div>
+        <Link to="skills">Skills</Link>
+      </div>
+      <div>
+        <Link to="contact">Contact</Link>
+      </div>
+    </nav> 
   )
 }
 
