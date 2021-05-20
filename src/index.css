@@ -25,6 +25,17 @@ hr {
   margin-top: 20px;
 }
 
+
+button {
+  background-color: #3c4249;
+  border: 1px solid #444c56;
+  color: #adbac7;
+  font-weight: bold;
+  border-radius: 20px;
+}
+
 button:hover {
   transition-duration: 0.3s;
+  background-color: #545d68;
+  border: 1px solid #909dab;
 }

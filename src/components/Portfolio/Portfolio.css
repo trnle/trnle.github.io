@@ -67,29 +67,17 @@ div h4, .overview-title-snippet p, .title-snippet p, div h2 {
 }
 
 .view-btn {
-  border-radius: 20px;
-  background-color: #363f47;
-  border: 1px solid #363f47;
-  color: #adbac7;
-  font-weight: bold;
+  
   font-size: 14px;
-  padding: 5px 13px;
+  padding: 3px 13px;
 }
 
-.view-btn:hover, .exit-modal-btn:hover, .github:hover, .live-link:hover {
-  background-color: #444f5a;
-}
 
 .exit-modal-btn {
   float: right;
-  margin: 0 auto;
+  margin: auto;
   height: 30px;
   width: 30px;
-  border-radius: 50%;
-  background-color: #363f47;
-  border: 1px solid #363f47;
-  color: #adbac7;
-  font-weight: bold;
   font-size: 14px;
 }
 
@@ -104,13 +92,8 @@ div h4, .overview-title-snippet p, .title-snippet p, div h2 {
 .github, .live-link {
   float: right;
   margin-right: 10px;
-  background-color: #363f47;
-  border: 1px solid #363f47;
-  color: #adbac7;
-  font-weight: bold;
-  border-radius: 20px;
   font-size: 14px;
-  padding: 5px 13px;
+  padding: 4px 13px;
 }
 
 .github a, .live-link a {
