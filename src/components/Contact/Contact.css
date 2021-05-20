@@ -16,9 +16,11 @@
 .fab, .fas {
   font-size: 35px;
   margin: 0 20px;
+  color: #77828f;
 }
 
 .fab:hover, .fas:hover {
   transition-duration: 0.3s;
-  color: #77828f;
+  color: #cdd9e5;
+  
 }
