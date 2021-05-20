@@ -2,7 +2,7 @@ import Navigation from './components/Navigation';
 import AboutMe from './components/AboutMe';
 import Portfolio from './components/Portfolio';
 import Skills from './components/Skills';
-import Contact from './components/Contact';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -11,7 +11,7 @@ function App() {
       <AboutMe />
       <Portfolio />
       <Skills />
-      <Contact />
+      <Footer />
     </>
   );
 }

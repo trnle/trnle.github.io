@@ -1,4 +1,21 @@
 #about-me {
-  margin-top: 50px;
-  margin-bottom: 100px;
+  margin: 150px 250px 100px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
 }
+
+#contact-links a {
+  padding: 0 0 20px 0;
+}
+
+.fab, .fas {
+  font-size: 30px;
+  margin: 0 15px;
+  color: #97a2ad;
+}
+
+.fab:hover, .fas:hover {
+  transition-duration: 0.3s;
+  color: #cdd9e5;
+}
+

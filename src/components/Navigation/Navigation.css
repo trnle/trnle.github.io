@@ -10,7 +10,7 @@ nav {
   justify-content: center;
   cursor: pointer;
   top: 0;
-  position: absolute;
+  position: fixed;
 }
 
 nav div {
