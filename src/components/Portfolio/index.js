@@ -16,40 +16,45 @@ function Portfolio() {
       <div id='portfolio-container'>
         <div className='overview'>
           <img src={pupprIcon} alt='' height='70' />
-          <div className='overview-title-snippet'>
+          <div className='title-snippet'>
             <h4>Puppr</h4>
-            <p>Puppr, inspired by Flickr..</p>
+            <p>Photo sharing application.</p>
+          </div>
+          <div className='view-modal'>
+            <ProjectModal
+              icon={pupprIcon}
+              altText='Puppr Icon showing dog'
+              title='Puppr'
+              snippet='Puppr, inspired by Flickr, is a photo sharing website centered around dogs. Users can upload and view photos, comment on photos, and create their own photo albums for dogs.'
+              tech={['React', 'Redux', 'Express', 'JavaScript', 'HTML', 'CSS']}
+              description='thorough rundown of project goes here? challenges.. etc.'
+              githubURL='https://github.com/trnle/puppr'
+              liveLink='https://pupproni.herokuapp.com/'
+              images={[home]}
+            />
           </div>
         </div>
-        <ProjectModal
-          icon={pupprIcon}
-          altText='Puppr Icon showing dog'
-          title='Puppr'
-          snippet='Puppr, inspired by Flickr, is a photo sharing website centered around dogs. Users can upload and view photos, comment on photos, and create their own photo albums for dogs.'
-          tech={['React', 'Redux', 'Express', 'JavaScript', 'HTML', 'CSS']}
-          description='thorough rundown of project goes here? challenges.. etc.'
-          githubURL='https://github.com/trnle/puppr'
-          liveLink='https://pupproni.herokuapp.com/'
-          images={[home]}
-        />
         <div className='overview'>
           <img src={ggPlaysIcon} alt='' height='70' />
-          <div className='overview-title-snippet'>
+          <div className='title-snippet'>
             <h4>ggPlays</h4>
-            <p>very brief description</p>
+            <p>Video game reviews application.</p>
           </div>
+          <div className='view-modal'>
+            <ProjectModal
+              icon={ggPlaysIcon}
+              altText='ggPlays icon'
+              title='ggPlays'
+              snippet='ggPlays is a web application that allows users to view various video games, publish game reviews, and catalog games into game shelves that can be customized.'
+              tech={['Sequelize', 'Express', 'JavaScript', 'HTML', 'CSS']}
+              description='test test test'
+              githubURL='https://github.com/Hieu-Ma/ggplays/'
+              liveLink='https://ggplays.herokuapp.com/'
+              images={[ggPlaysHome]}
+            />
+          </div>
+          
         </div>
-        <ProjectModal
-          icon={ggPlaysIcon}
-          altText='ggPlays icon'
-          title='ggPlays'
-          snippet='very brief description'
-          tech={['Sequelize', 'Express', 'JavaScript', 'HTML', 'CSS']}
-          description='test test test'
-          githubURL='https://github.com/Hieu-Ma/ggplays/'
-          liveLink='https://ggplays.herokuapp.com/'
-          images={[ggPlaysHome]}
-        />
       </div>
     </div>
    

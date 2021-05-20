@@ -5,27 +5,44 @@
 
 #portfolio-container, #portfolio h3 {
   display: flex;
-  justify-content: space-evenly;
-  align-items: center;
+  justify-content: center;
 }
 
-.overview {
+
+.view-modal {
+  display: flex;
+  align-items: center;
+  margin: 0 20px;
+}
+
+.overview, .overview-modal {
   display: flex;
   flex-direction: row;
 }
 
-.overview img {
+.overview {
+  margin-left: 50px;
+}
+
+.overview img, .overview-modal img {
   box-shadow: 1px 1px 5px -3.5px black;
   border-radius: 13px;
   margin-right: 20px;
 }
 
-div h4, .overview-title-snippet p, div h2 {
-  margin: 4px 10px 10px 0;
+div h4, .overview-title-snippet p, .title-snippet p, div h2 {
+  margin: 4px 0px 10px 0;
+  margin-right: 0;
 }
 
-.overview-title-snippet p {
+.overview-title-snippet p, .title-snippet p {
   color: #768390;
+  word-break: normal;
+  white-space: normal;
+}
+
+.title-snippet p {
+  width: 240px;
   word-break: normal;
   white-space: normal;
 }
@@ -38,7 +55,7 @@ div h4, .overview-title-snippet p, div h2 {
   display: inline-flex;
   border: 1px solid rgba(173, 186, 199, 0.286);
   border-radius: 8px;
-  margin: 0 8px 35px 0;
+  margin: 0 8px 20px 0;
   padding: 5px;
   font-size: 14px;
 }
@@ -74,16 +91,20 @@ div h4, .overview-title-snippet p, div h2 {
   margin-top: 17px;
 }
 
+.gh-ll-btns {
+  margin-right: 16px;
+}
+
 .github, .live-link {
   float: right;
-  margin-top: 6px;
-  margin-right: 20px;
+  margin-right: 10px;
   background-color: #363f47;
   border: 1px solid #363f47;
   color: #adbac7;
   font-weight: bold;
   border-radius: 20px;
   font-size: 16px;
+  padding: 5px 10px;
 }
 
 .github a, .live-link a {
