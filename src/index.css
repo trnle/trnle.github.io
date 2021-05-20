@@ -3,7 +3,6 @@ html {
 }
 
 body {
-  margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -37,7 +36,7 @@ button {
 button:hover {
   transition-duration: 0.3s;
   background-color: #545d68;
-  border: 1px solid #909dab;
+  border: 1px solid rgba(180, 193, 206, 0.699);
 }
 
 h3 {

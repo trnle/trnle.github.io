@@ -1,6 +1,6 @@
 #portfolio {
   margin-top: 500px;
-  margin-bottom: 100px;
+  margin-bottom: 400px;
 }
 
 #portfolio-container {
@@ -9,7 +9,7 @@
 }
 
 #portfolio h3 {
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
 .view-modal {
@@ -71,6 +71,10 @@ div h4, .overview-title-snippet p, .title-snippet p, div h2 {
   font-size: 14px;
 }
 
+.tech-container:hover {
+  border: 1px solid rgba(180, 193, 206, 0.699);
+}
+
 .tech-container p {
   margin: 5px;
 }
@@ -127,7 +131,7 @@ div h4, .overview-title-snippet p, .title-snippet p, div h2 {
 }
 
 .slideshow-images img {
-  border-radius: 7px;
+  border-radius: 8px;
 }
 
 .description {

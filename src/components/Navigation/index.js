@@ -13,9 +13,6 @@ function Navigation() {
       <div>
         <Link to="skills">Skills</Link>
       </div>
-      <div>
-        <Link to="contact">Contact</Link>
-      </div>
     </nav> 
   )
 }

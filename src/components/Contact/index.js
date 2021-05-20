@@ -3,7 +3,10 @@ import './Contact.css';
 function Contact() {
   return (
     <div id='contact'>
-      <h3>Contact</h3>
+      <div id='by-line'>
+        <p>Designed by Tran &#128029;</p>
+      </div>
+      
       <div id='contact-links'>
         <a href='https://www.linkedin.com/in/trnle'>
           <i className='fab fa-linkedin'></i>
