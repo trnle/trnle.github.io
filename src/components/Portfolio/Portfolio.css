@@ -124,6 +124,7 @@ div h4, .overview-title-snippet p, .title-snippet p, div h2 {
   margin: auto;
   overflow-x: auto;
   width: 100%;
+  animation-duration: 2s;
 }
 
 .slideshow-images {
