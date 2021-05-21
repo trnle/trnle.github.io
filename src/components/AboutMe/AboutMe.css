@@ -1,7 +1,9 @@
 #about-me {
-  margin: 150px 250px 100px;
+  padding-top: 150px;
+  margin: 0 250px;
   display: grid;
   grid-template-columns: 1fr 2fr;
+  height: 100vh;
 }
 
 #contact-links a {
