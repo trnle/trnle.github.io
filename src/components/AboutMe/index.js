@@ -12,8 +12,8 @@ function AboutMe() {
         <Contact />
       </div>
       <div id='introduction'>
-        <h2>Hi, I'm Tran!</h2>
-        <p>I am a Software Engineer.</p>
+        <h2>Hi, I'm Tran! &#128105;&#127995;&#8205;&#128187;</h2>
+        <p>Bio Here</p>
       </div>
     </div> 
   )

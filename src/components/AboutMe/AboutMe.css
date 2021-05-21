@@ -7,15 +7,21 @@
   height: 55vh;
 }
 
-#contact-links, #portrait {
-  margin-top: 30px;
+#contact-links {
+  margin-top: 5px;
   display: flex;
   flex-direction: row;
   justify-content: center;
+  background-color: #30383f;
+  border-radius: 10px;
+}
+
+#portrait {
+  padding: 20px;
 }
 
 #contact-links a {
-  padding: 0 0 20px 0;
+  padding: 10px 0;
 }
 
 .fab, .fas {
