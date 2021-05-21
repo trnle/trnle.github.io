@@ -1,9 +1,16 @@
 #about-me {
-  padding-top: 150px;
+  padding-top: 110px;
   margin: 0 250px;
   display: grid;
   grid-template-columns: 1fr 2fr;
-  height: 100vh;
+  justify-content: center;
+}
+
+#contact-links, #portrait {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 #contact-links a {
@@ -11,7 +18,7 @@
 }
 
 .fab, .fas {
-  font-size: 30px;
+  font-size: 25px;
   margin: 0 15px;
   color: #97a2ad;
 }
@@ -19,5 +26,13 @@
 .fab:hover, .fas:hover {
   transition-duration: 0.3s;
   color: #cdd9e5;
+}
+
+#introduction {
+  margin: 35px 50px 40px;
+}
+
+#introduction p {
+  font-size: 19px;
 }
 
