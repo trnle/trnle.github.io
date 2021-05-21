@@ -7,15 +7,23 @@ function AboutMe() {
     <div id='about-me'>
       <div id='portrait-links'>
         <div id='portrait'>
-          <img src={portrait} alt="Headshot of Tran" height='270'/>
+          <img src={portrait} alt="Headshot of Tran Le" height='260' />
         </div>
+        <hr />
         <Contact />
       </div>
       <div id='introduction'>
         <h2>Hi, I'm Tran! &#128105;&#127995;&#8205;&#128187;</h2>
-        <p>Bio Here</p>
+        <p>Bio Here Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+          do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+          ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+          in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui 
+          officia deserunt mollit anim id est laborum  elit, sed do eiusmod 
+          tempor incididunt ut labore et dolore magna aliqua. U</p>
       </div>
-    </div> 
+    </div>
   )
 }
 
