@@ -50,7 +50,7 @@ function ProjectModal({ icon, altText, title, snippet, tech, description, github
             </div>
             <div className='project-gallery'>
               {/* Create image carousel */}
-              {images.map(image => {
+              {images?.map(image => {
                 return (
                   <div key={image} className='slideshow-images w3-animate-right'>
                     <img className='project-image' src={image} alt={altText} height='440' />

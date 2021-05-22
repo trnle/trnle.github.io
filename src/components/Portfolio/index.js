@@ -16,6 +16,26 @@ function Portfolio() {
     <div id='portfolio'>
       <h3>Portfolio</h3>
       <div id='portfolio-container'>
+        {/* <div className='overview'>
+          <img src={pupprIcon} alt='' height='70' />
+          <div className='title-snippet'>
+            <h4>Radiant</h4>
+            <p>Skincare routine application.</p>
+          </div>
+          <div className='view-modal'>
+            <ProjectModal
+              icon={pupprIcon}
+              altText='Radiant Icon'
+              title='Radiant'
+              snippet='ffkajl;wekjf;alkwejf;lkajdsf;lkajef'
+              tech={['React', 'Redux', 'Flask', 'Python', 'JavaScript', 'HTML', 'CSS']}
+              description='thorough rundown of project goes here? challenges.. etc.'
+              githubURL='https://github.com/trnle/radiant'
+              liveLink='https://radiantskin.herokuapp.com/'
+              images={[]}
+            />
+          </div>
+        </div> */}
         <div className='overview'>
           <img src={pupprIcon} alt='' height='70' />
           <div className='title-snippet'>
