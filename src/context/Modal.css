@@ -31,11 +31,3 @@
   overflow-y: auto;
   overflow-x: initial;
 }
-
-/* @media (min-height: 500px) {
-  #modal-content { height: 400px; }
-}
-
-@media (min-height: 800px) {
-  #modal-content{ height: 600px; }
-} */
