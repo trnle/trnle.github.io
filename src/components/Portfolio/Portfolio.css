@@ -62,27 +62,6 @@ div h4, .overview-title-snippet p, .title-snippet p, div h2 {
   white-space: normal;
 }
 
-.tech-stack {
-  margin-right: 20px;
-}
-
-.tech-container {
-  display: inline-flex;
-  border: 1px solid rgba(173, 186, 199, 0.286);
-  border-radius: 8px;
-  margin: 0 8px 20px 0;
-  padding: 0 10px;
-  font-size: 14px;
-}
-
-.tech-container:hover {
-  border: 1px solid rgba(180, 193, 206, 0.699);
-}
-
-.tech-container p {
-  margin: 5px;
-}
-
 .view-btn {
   font-size: 14px;
   padding: 3px 13px;
@@ -94,10 +73,6 @@ div h4, .overview-title-snippet p, .title-snippet p, div h2 {
   height: 30px;
   width: 30px;
   font-size: 14px;
-}
-
-.tech-used {
-  margin-top: 17px;
 }
 
 .gh-ll-btns {
@@ -115,6 +90,31 @@ div h4, .overview-title-snippet p, .title-snippet p, div h2 {
   text-decoration: none;
   color: #adbac7;
 }
+
+.tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.tech-container {
+  display: inline-flex;
+  border: 1px solid rgba(173, 186, 199, 0.286);
+  border-radius: 8px;
+  margin: 8px 8px 0 0;
+  padding: 0 10px;
+  font-size: 14px;
+}
+
+.tech-container:hover {
+  border: 1px solid rgba(180, 193, 206, 0.699);
+}
+
+.tech-container p {
+  margin: 5px;
+}
+
+
 
 .project-gallery {
   max-width: 100%;

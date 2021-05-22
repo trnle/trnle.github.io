@@ -36,7 +36,7 @@ function ProjectModal({ icon, altText, title, snippet, tech, description, github
               </div>
             </div>
             <hr />
-            <div className='tech-use'>
+            <div className='tech-used'>
               <h4>Tech</h4>
               <div className='tech-stack'>
                 {tech.map(tool => {
