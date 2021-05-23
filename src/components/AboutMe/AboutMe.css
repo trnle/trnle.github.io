@@ -4,7 +4,7 @@
   display: grid;
   grid-template-columns: 1fr 2fr;
   justify-content: center;
-  height: 55vh;
+  /* height: 58vh; */
 }
 
 #contact-links {
@@ -12,14 +12,10 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
-  /* background-color: #30383f;
-  border-radius: 10px; */
 }
 
 #portrait {
   padding: 20px;
-  /* background-color: #30383f;
-  border-radius: 10px; */
 }
 
 #portrait img {
@@ -46,10 +42,21 @@
 }
 
 #introduction {
-  margin: 35px 50px 40px;
-}
-
-#introduction p {
+  margin: 23px 0 0 23px;
   font-size: 19px;
+  overflow-x: hidden;
 }
 
+#bio {
+  display: flex;
+  flex-direction: column;
+  max-width: 100vw;
+  /* height: auto; */
+  max-height: 295px;
+  font-size: 1.3vw;
+}
+
+#bio p {
+  margin-top: 6px;
+  overflow-y: scroll;
+}

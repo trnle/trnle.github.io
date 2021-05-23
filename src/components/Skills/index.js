@@ -10,6 +10,8 @@ function Skills() {
         <i className="devicon-nodejs-plain-wordmark colored"></i>
         <i className="devicon-react-original-wordmark colored"></i>
         <i className="devicon-redux-original colored"></i>
+        <i class="devicon-html5-plain-wordmark colored"></i>
+        <i class="devicon-css3-plain-wordmark colored"></i>
         <i className="devicon-postgresql-plain-wordmark colored"></i>
         <i className="devicon-express-original"></i>
         <i className="devicon-heroku-plain-wordmark colored"></i>
