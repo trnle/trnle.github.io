@@ -48,7 +48,7 @@ function Portfolio() {
               icon={tradeMarianIcon}
               altText='TradeMarian Icon'
               title='TradeMarian'
-              snippet='ffkajl;wekjf;alkwejf;lkajdsf;lkajef'
+              snippet='TradeMarian is a clone application of Robinhood, a stock trading platform where users can buy, sell, and watch stocks in the market.'
               tech={['React', 'Redux', 'Flask', 'Python', 'JavaScript', 'HTML', 'CSS']}
               description='thorough rundown of project goes here? challenges.. etc.'
               githubURL='https://github.com/jmthorn/TradeMarian'
