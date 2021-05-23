@@ -10,12 +10,13 @@
 #skills-container {
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
 }
 
 #skills-container i {
   font-size: 65px;
-  margin: 0 10px;
+  margin: 10px;
 }
 
 #skills-container p:hover {
