@@ -9,11 +9,9 @@
 #portfolio-container {
   display: grid;
   justify-content: center;
-  /* grid-template-columns: 1fr 1fr; */
   grid-template-columns: repeat(auto-fit, minmax(430px, 1fr));
   grid-template-rows: auto;
-  padding: 0 200px;
-  
+  padding: 0 14vw;
 }
 
 #portfolio h3 {
@@ -23,7 +21,7 @@
 .view-modal {
   display: flex;
   align-items: center;
-  margin: 0 45px;
+  margin: 0 4vh;
 }
 
 .overview {
@@ -33,11 +31,9 @@
 
 .overview-modal {
   display: flex;
-  /* flex-direction: row; */
 }
 
 .overview {
-  margin-left: 45px; 
   margin-bottom: 30px;
 }
 

@@ -1,9 +1,6 @@
 #skills {
   padding-top: 90px;
-  
-}
-
-#skills h3 {
+  padding-bottom: 70px;
   margin-top: 100px;
   margin-bottom: 30px;
 }
@@ -13,6 +10,7 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  margin: 0 3vw;
 }
 
 #skills-container i {
