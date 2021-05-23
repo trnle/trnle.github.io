@@ -9,6 +9,7 @@ import ggPlaysHome from '../../images/ggPlays/ggPlays-home.png';
 import game from '../../images/ggPlays/game.png';
 import reviews from '../../images/ggPlays/reviews.png';
 import shelves from '../../images/ggPlays/shelves.png';
+import tradeMarianIcon from '../../images/TradeMarian/trade-marian-icon.png';
 import './Portfolio.css';
 
 function Portfolio() {
@@ -36,6 +37,26 @@ function Portfolio() {
             />
           </div>
         </div> */}
+       <div className='overview'>
+          <img src={tradeMarianIcon} alt='' height='70' />
+          <div className='title-snippet'>
+            <h4>TradeMarian</h4>
+            <p>Stock trading application.</p>
+          </div>
+          <div className='view-modal'>
+            <ProjectModal
+              icon={tradeMarianIcon}
+              altText='TradeMarian Icon'
+              title='TradeMarian'
+              snippet='ffkajl;wekjf;alkwejf;lkajdsf;lkajef'
+              tech={['React', 'Redux', 'Flask', 'Python', 'JavaScript', 'HTML', 'CSS']}
+              description='thorough rundown of project goes here? challenges.. etc.'
+              githubURL='https://github.com/jmthorn/TradeMarian'
+              liveLink='tranle.dev'
+              images={[]}
+            />
+          </div>
+        </div>
         <div className='overview'>
           <img src={pupprIcon} alt='' height='70' />
           <div className='title-snippet'>
