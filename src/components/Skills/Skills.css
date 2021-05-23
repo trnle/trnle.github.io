@@ -13,14 +13,19 @@
   flex-wrap: wrap;
 }
 
-#skills-container p {
+#skills-container i {
+  font-size: 65px;
+  margin: 0 10px;
+}
+
+/* #skills-container p {
   border: 1px solid rgba(173, 186, 199, 0.286);
   border-radius: 8px;
   margin: 0 8px 0;
   padding: 5px 12px;
   font-size: 18px;
-  text-align: center;
-}
+  
+} */
 
 #skills-container p:hover {
   border: 1px solid rgba(180, 193, 206, 0.699);
