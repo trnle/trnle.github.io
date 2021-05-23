@@ -18,13 +18,11 @@
   padding: 20px;
   display: flex;
   justify-content: center;
-
 }
 
 #portrait img {
   border-radius: 25px;
   height: 36vh;
-  
 }
 
 #portrait-links hr {
@@ -36,7 +34,7 @@
 }
 
 .fab, .fas {
-  font-size: 25px;
+  font-size: 3.5vh;
   margin: 0 15px;
   color: #97a2ad;
 }

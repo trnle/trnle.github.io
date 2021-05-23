@@ -1,14 +1,19 @@
 #portfolio {
   padding-top: 150px;
   height: 50vh;
+  /* display: flex;
+  justify-content: center;
+  flex-direction: column; */
 }
 
 #portfolio-container {
   display: grid;
   justify-content: center;
-  grid-template-columns: 1fr 1fr;
+  /* grid-template-columns: 1fr 1fr; */
+  grid-template-columns: repeat(auto-fit, minmax(430px, 1fr));
   grid-template-rows: auto;
   padding: 0 200px;
+  
 }
 
 #portfolio h3 {
@@ -21,9 +26,14 @@
   margin: 0 45px;
 }
 
-.overview, .overview-modal {
+.overview {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+}
+
+.overview-modal {
   display: flex;
-  flex-direction: row;
+  /* flex-direction: row; */
 }
 
 .overview {
@@ -31,7 +41,13 @@
   margin-bottom: 30px;
 }
 
-.overview img, .overview-modal img {
+.overview img {
+  border-radius: 15px;
+  display: flex;
+  justify-self: flex-end;
+}
+
+.overview-modal img {
   border-radius: 15px;
   margin-right: 20px;
 }
@@ -42,7 +58,7 @@
 }
 
 .title-snippet h4 {
-  margin-top: 8px;
+  margin: 8px 0 0 20px;
   font-size: 17px;
 }
 
@@ -58,6 +74,7 @@ div h4, .overview-title-snippet p, .title-snippet p, div h2 {
 
 .title-snippet p {
   width: 235px;
+  margin: 3px 0 0 20px;
   word-break: normal;
   white-space: normal;
 }
