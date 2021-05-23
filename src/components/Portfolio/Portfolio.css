@@ -114,8 +114,6 @@ div h4, .overview-title-snippet p, .title-snippet p, div h2 {
   margin: 5px;
 }
 
-
-
 .project-gallery {
   max-width: 100%;
   position: relative;
@@ -141,4 +139,3 @@ div h4, .overview-title-snippet p, .title-snippet p, div h2 {
 .description {
   margin-top: 20px;
 }
-

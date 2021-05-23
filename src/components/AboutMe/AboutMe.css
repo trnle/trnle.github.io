@@ -16,10 +16,15 @@
 
 #portrait {
   padding: 20px;
+  display: flex;
+  justify-content: center;
+
 }
 
 #portrait img {
   border-radius: 25px;
+  height: 36vh;
+  
 }
 
 #portrait-links hr {
