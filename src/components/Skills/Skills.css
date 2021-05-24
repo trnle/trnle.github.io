@@ -23,3 +23,15 @@
 #skills-container p:hover {
   border: 1px solid rgba(180, 193, 206, 0.699);
 }
+
+@media screen and (min-width: 1200px) {
+  #skills-container {
+    margin: 0 10vw;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  #skills-container {
+    margin: 0 15vw;
+  }
+}
