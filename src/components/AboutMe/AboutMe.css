@@ -67,15 +67,11 @@
   overflow-y: scroll;
 }
 
-@media screen and (max-width: 1020px) {
+@media screen and (max-width: 1020px) and (min-width: 701px) {
   #about-me {
     display: flex;
     flex-direction: column;
     margin: 0 17vw;
-  }
-
-  #portrait img {
-    width: 30vw;
   }
 
   .fab, .fas {
