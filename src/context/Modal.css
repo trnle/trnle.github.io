@@ -31,3 +31,15 @@
   overflow-y: auto;
   overflow-x: initial;
 }
+
+@media screen and (max-width: 650px) {
+  #modal-content {
+    width: 100vw;
+  }
+}
+
+@media screen and (min-width: 651px) {
+  #modal-content {
+    width: 90vw;
+  }
+}

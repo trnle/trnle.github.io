@@ -152,3 +152,58 @@ div h4, .overview-title-snippet p, .title-snippet p, div h2 {
 .description {
   margin-top: 20px;
 }
+
+@media screen and (max-width: 470px) {
+  .title-snippet {
+    /* display: none; */
+    max-width: 10px;
+  }
+
+  .title-snippet p {
+    width: 200px;
+  }
+
+  .title-snippet p, .title-snippet h4 {
+    margin: 0 0 0 10px;
+  }
+
+  .overview img {
+    margin-left: 50px;
+  }
+
+  .view-modal {
+    margin: -8px;
+  
+  }
+
+  .gh-ll-btns {
+    float: inherit;
+    margin-right: 0;
+  }
+
+  .github, .live-link {
+    font-size: 12px;
+    padding: 4px 5px;
+  }
+
+  .overview-title-snippet h2 {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .overview-modal {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: center;
+  }
+
+  .overview-modal img {
+    display: none;
+  }
+
+  .slideshow-images img {
+    height: 70vw;
+  }
+}
