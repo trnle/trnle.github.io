@@ -28,18 +28,13 @@
   background-color: #22272e;
   white-space: nowrap;
   border-radius: 10px;
-  overflow-y: auto;
-  overflow-x: initial;
+  /* overflow-y: auto; */
+  overflow-x: hidden;
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 1200px) {
   #modal-content {
     width: 100vw;
   }
 }
 
-@media screen and (min-width: 651px) {
-  #modal-content {
-    width: 90vw;
-  }
-}
