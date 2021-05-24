@@ -86,6 +86,10 @@
     margin: 0 10vw;
   }
 
+  #portrait img {
+    width: 40vw;
+  }
+
   .fab, .fas {
     font-size: 5vw;
   }
