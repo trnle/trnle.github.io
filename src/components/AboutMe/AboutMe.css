@@ -71,7 +71,6 @@
   #about-me {
     display: flex;
     flex-direction: column;
-    margin: 0 17vw;
   }
 
   .fab, .fas {
@@ -83,7 +82,7 @@
   #about-me {
     display: flex;
     flex-direction: column;
-    margin: 0 10vw;
+    margin: 0 20px;
   }
 
   .fab, .fas {

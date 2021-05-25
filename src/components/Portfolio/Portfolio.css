@@ -172,7 +172,7 @@ div h4, .overview-title-snippet p, .title-snippet p, div h2 {
   }
 
   .view-modal {
-    margin: 0px;
+    margin: -3px;
   }
 
   .gh-ll-btns {
