@@ -78,14 +78,22 @@
   }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 793px) {
   #about-me {
     display: flex;
     flex-direction: column;
-    margin: 0 20px;
+    margin: 0 40px;
   }
 
   .fab, .fas {
     font-size: 5vw;
+  }
+
+  #bio {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    max-height: 450px;
+    font-size: 16px;
   }
 }
