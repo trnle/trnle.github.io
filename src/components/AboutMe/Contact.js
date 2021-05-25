@@ -5,7 +5,7 @@ function Contact() {
         <a href='https://www.linkedin.com/in/trnle'>
           <i className='fab fa-linkedin'></i>
         </a>
-        <a href='https://github.com/trnle_'>
+        <a href='https://github.com/trnle'>
           <i className='fab fa-github'></i>
         </a>
         <a href='https://angel.co/u/tran-le-5'>

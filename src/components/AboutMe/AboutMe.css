@@ -21,7 +21,7 @@
 
 #portrait img {
   border-radius: 25px;
-  width: 20vw;
+  width: 240px;
 }
 
 #portrait-links {
@@ -84,10 +84,6 @@
     display: flex;
     flex-direction: column;
     margin: 0 10vw;
-  }
-
-  #portrait img {
-    width: 40vw;
   }
 
   .fab, .fas {
