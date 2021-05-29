@@ -50,9 +50,9 @@ function Portfolio() {
               title='TradeMarian'
               snippet='TradeMarian is a clone application of Robinhood, a stock trading platform where users can buy, sell, and watch stocks in the market.'
               tech={['React', 'Redux', 'Flask', 'Python', 'JavaScript', 'HTML', 'CSS']}
-              description='thorough rundown of project goes here? challenges.. etc.'
+              description=''
               githubURL='https://github.com/jmthorn/TradeMarian'
-              liveLink='tranle.dev'
+              liveLink='https://trademarian.herokuapp.com'
               images={[]}
             />
           </div>
@@ -70,7 +70,7 @@ function Portfolio() {
               title='Puppr'
               snippet='Puppr, inspired by Flickr, is a photo sharing website centered around dogs. Users can upload and view photos, comment on photos, and create their own photo albums for dogs.'
               tech={['React', 'Redux', 'Express', 'JavaScript', 'HTML', 'CSS']}
-              description='thorough rundown of project goes here? challenges.. etc.'
+              description=''
               githubURL='https://github.com/trnle/puppr'
               liveLink='https://pupproni.herokuapp.com/'
               images={[pupprHome, explore, createAlbum, commentsSection ]}
@@ -90,7 +90,7 @@ function Portfolio() {
               title='ggPlays'
               snippet='ggPlays is a web application that allows users to view various video games, publish game reviews, and catalog games into game shelves that can be customized.'
               tech={['Sequelize', 'Express', 'JavaScript', 'HTML', 'CSS']}
-              description='test test test'
+              description=''
               githubURL='https://github.com/Hieu-Ma/ggplays/'
               liveLink='https://ggplays.herokuapp.com/'
               images={[ggPlaysHome, game, reviews, shelves]}

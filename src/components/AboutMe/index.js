@@ -16,16 +16,18 @@ function AboutMe() {
         <h2>Hi, I'm Tran! &#128105;&#127995;&#8205;&#128187;</h2>
         <div id='bio'>
           <p>
-            Bio Here Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-          do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-          ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
-          in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-          officia deserunt mollit anim id est laborum  elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua. U  id est laborum  elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magn id est laborum  elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magn
+            I graduated from The University of Texas at Austin (Hook 'em &#129304;&#127996;)
+            with a Bachelor of Science and Arts in Biology. During my time at
+            university, I realized that software engineering was a growing interest
+            that I wanted to pursue as a career. Transitioning from the healthcare
+            field to the tech industry has been exciting as I've learned more about
+            how critical software and digitalization are to the modern world. Within
+            the last year, I've dedicated time to learning how to program in Python
+            and JavaScript and I enrolled in an online bootcamp at App Academy
+            to further aid my transition into the tech industry. I'm looking 
+            forward to growing as a software engineer by continuing to familiarize 
+            myself with useful programming languages and tools, and I'm especially
+            keen on learning about mobile app development in the future!
           </p>
         </div>
       </div>
