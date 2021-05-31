@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Modal } from '../../context/Modal';
+import { Modal } from '../../../context/Modal';
 
 function ProjectModal({ icon, altText, title, snippet, tech, description, githubURL, liveLink, images }) {
   const [showModal, setShowModal] = useState(false);

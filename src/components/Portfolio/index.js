@@ -1,4 +1,4 @@
-import ProjectModal from '../../context/ProjectModal';
+import ProjectModal from '../Portfolio/ProjectModal';
 import pupprIcon from '../../images/puppr/puppr-icon.png';
 import pupprHome from '../../images/puppr/puppr-home.png';
 import explore from '../../images/puppr/explore.png';
@@ -10,6 +10,11 @@ import game from '../../images/ggPlays/game.png';
 import reviews from '../../images/ggPlays/reviews.png';
 import shelves from '../../images/ggPlays/shelves.png';
 import tradeMarianIcon from '../../images/TradeMarian/trade-marian-icon.png';
+import tmSplash from '../../images/TradeMarian/tm-splash.png';
+import tmLogin from '../../images/TradeMarian/tm-login.png';
+import tmPortfolio from '../../images/TradeMarian/tm-portfolio.png';
+import tmStock from '../../images/TradeMarian/tm-stock.png';
+import tmSearch from '../../images/TradeMarian/tm-search.png';
 import './Portfolio.css';
 
 function Portfolio() {
@@ -49,11 +54,11 @@ function Portfolio() {
               altText='TradeMarian Icon'
               title='TradeMarian'
               snippet='TradeMarian is a clone application of Robinhood, a stock trading platform where users can buy, sell, and watch stocks in the market.'
-              tech={['React', 'Redux', 'Flask', 'Python', 'JavaScript', 'HTML', 'CSS']}
+              tech={['Python', 'JavaScript', 'React', 'Redux', 'Flask', 'HTML', 'CSS', 'PostgreSQL', 'SQLAlchemy']}
               description=''
               githubURL='https://github.com/jmthorn/TradeMarian'
               liveLink='https://trademarian.herokuapp.com'
-              images={[]}
+              images={[tmSplash, tmLogin, tmPortfolio, tmStock, tmSearch]}
             />
           </div>
         </div>
