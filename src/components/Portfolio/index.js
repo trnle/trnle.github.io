@@ -1,9 +1,9 @@
 import ProjectModal from '../Portfolio/ProjectModal';
-import pupprIcon from '../../images/puppr/puppr-icon.png';
-import pupprHome from '../../images/puppr/puppr-home.png';
-import explore from '../../images/puppr/explore.png';
-import createAlbum from '../../images/puppr/create-album.png';
-import commentsSection from '../../images/puppr/comments-section.png';
+import pupprIcon from '../../images/Puppr/puppr-icon.png';
+import pupprHome from '../../images/Puppr/puppr-home.png';
+import explore from '../../images/Puppr/explore.png';
+import createAlbum from '../../images/Puppr/create-album.png';
+import commentsSection from '../../images/Puppr/comments-section.png';
 import ggPlaysIcon from '../../images/ggPlays/ggPlays-icon.png';
 import ggPlaysHome from '../../images/ggPlays/ggPlays-home.png';
 import game from '../../images/ggPlays/game.png';
@@ -15,6 +15,7 @@ import tmLogin from '../../images/TradeMarian/tm-login.png';
 import tmPortfolio from '../../images/TradeMarian/tm-portfolio.png';
 import tmStock from '../../images/TradeMarian/tm-stock.png';
 import tmSearch from '../../images/TradeMarian/tm-search.png';
+import radiantIcon from '../../images/Radiant/radiant-icon.png';
 import './Portfolio.css';
 
 function Portfolio() {
@@ -22,26 +23,27 @@ function Portfolio() {
     <div id='portfolio'>
       <h3>Portfolio</h3>
       <div id='portfolio-container'>
-        {/* <div className='overview'>
-          <img src={pupprIcon} alt='' height='70' />
+        <div className='overview'>
+          <img src={radiantIcon} alt='' height='70' />
           <div className='title-snippet'>
             <h4>Radiant</h4>
             <p>Skincare routine application.</p>
           </div>
           <div className='view-modal'>
             <ProjectModal
-              icon={pupprIcon}
+              icon={radiantIcon}
               altText='Radiant Icon'
               title='Radiant'
-              snippet='ffkajl;wekjf;alkwejf;lkajdsf;lkajef'
-              tech={['React', 'Redux', 'Flask', 'Python', 'JavaScript', 'HTML', 'CSS']}
-              description='thorough rundown of project goes here? challenges.. etc.'
+              snippet='Create a personalized routine for your skincare and beauty treatments. Users can keep track of their morning and nighttime skincare routines as well as create
+                journal entries recording their skin progress. **This project is currently in development**'
+              tech={['Python', 'JavaScript', 'React', 'Redux', 'Flask', 'HTML', 'CSS', 'PostgreSQL', 'SQLAlchemy']}
+              description=''
               githubURL='https://github.com/trnle/radiant'
               liveLink='https://radiantskin.herokuapp.com/'
               images={[]}
             />
           </div>
-        </div> */}
+        </div>
        <div className='overview'>
           <img src={tradeMarianIcon} alt='' height='70' />
           <div className='title-snippet'>
@@ -74,7 +76,7 @@ function Portfolio() {
               altText='Puppr Icon showing dog'
               title='Puppr'
               snippet='Puppr, inspired by Flickr, is a photo sharing website centered around dogs. Users can upload and view photos, comment on photos, and create their own photo albums for dogs.'
-              tech={['React', 'Redux', 'Express', 'JavaScript', 'HTML', 'CSS']}
+              tech={['JavaScript', 'Express', 'React', 'Redux', 'HTML', 'CSS', 'PostgreSQL', 'Sequelize']}
               description=''
               githubURL='https://github.com/trnle/puppr'
               liveLink='https://pupproni.herokuapp.com/'
@@ -94,7 +96,7 @@ function Portfolio() {
               altText='ggPlays icon'
               title='ggPlays'
               snippet='ggPlays is a web application that allows users to view various video games, publish game reviews, and catalog games into game shelves that can be customized.'
-              tech={['Sequelize', 'Express', 'JavaScript', 'HTML', 'CSS']}
+              tech={['JavaScript', 'Express', 'Sequelize', 'HTML', 'CSS', 'Pug']}
               description=''
               githubURL='https://github.com/Hieu-Ma/ggplays/'
               liveLink='https://ggplays.herokuapp.com/'
