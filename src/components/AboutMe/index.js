@@ -21,11 +21,11 @@ function AboutMe() {
             university, I realized that software engineering was a growing interest
             that I wanted to pursue as a career. Transitioning from the healthcare
             field to the tech industry has been exciting as I've learned more about
-            how critical software and digitalization are to the modern world. Within
-            the last year, I've dedicated my time to learning how to program and develop
-            full-stack applications and I enrolled in an online bootcamp at App Academy
-            to further aid my transition into the tech industry. I'm looking 
-            forward to growing as a software engineer by continuing to familiarize 
+            how critical software and digitalization are to the modern world. To 
+            further aid my transition into the tech industry, I enrolled in an 
+            online bootcamp at App Academy. I've dedicated my time learning how 
+            to program, developing a range of full-stack applications within the 
+            last year. I'm looking forward to growing as a software engineer by continuing to familiarize 
             myself with useful programming languages and tools, and I'm especially
             keen on learning about mobile app development in the future!
           </p>
