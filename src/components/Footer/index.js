@@ -4,7 +4,7 @@ function Footer() {
   return (
     <div id='footer'>
       <div id='by-line'>
-        <p>Developed by Tran &#128029;</p>
+        <p>Developed by Tran Le &#128029;</p>
       </div>
     </div>
   )
