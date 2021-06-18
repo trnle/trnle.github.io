@@ -43,7 +43,7 @@ function Portfolio() {
               altText='Radiant Icon'
               title='Radiant'
               snippet='Create a personalized routine for your skincare and beauty treatments. Users can keep track of their morning and nighttime skincare routines as well as create
-                journal entries recording their skin progress.'
+                journal entries to record their skin progress.'
               tech={['Python', 'JavaScript', 'React', 'Redux', 'Flask', 'HTML', 'CSS', 'PostgreSQL', 'SQLAlchemy']}
               description=''
               githubURL='https://github.com/trnle/radiant'
