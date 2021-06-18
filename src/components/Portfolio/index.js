@@ -16,6 +16,14 @@ import tmPortfolio from '../../images/TradeMarian/tm-portfolio.png';
 import tmStock from '../../images/TradeMarian/tm-stock.png';
 import tmSearch from '../../images/TradeMarian/tm-search.png';
 import radiantIcon from '../../images/Radiant/radiant-icon.png';
+import radSplash from '../../images/Radiant/radiant-splash.png';
+import radFeatures from '../../images/Radiant/radiant-features.png';
+import radProducts from '../../images/Radiant/radiant-products.png';
+import radProduct from '../../images/Radiant/radiant-product.png';
+import radRoutines from '../../images/Radiant/radiant-routines.png';
+import radJournal from '../../images/Radiant/radiant-journal.png';
+import radEntry from '../../images/Radiant/radiant-entry.png';
+
 import './Portfolio.css';
 
 function Portfolio() {
@@ -27,7 +35,7 @@ function Portfolio() {
           <img src={radiantIcon} alt='' height='70' />
           <div className='title-snippet'>
             <h4>Radiant</h4>
-            <p>Skincare routine application.</p>
+            <p>Skincare application.</p>
           </div>
           <div className='view-modal'>
             <ProjectModal
@@ -35,12 +43,12 @@ function Portfolio() {
               altText='Radiant Icon'
               title='Radiant'
               snippet='Create a personalized routine for your skincare and beauty treatments. Users can keep track of their morning and nighttime skincare routines as well as create
-                journal entries recording their skin progress. **This project is currently in development**'
+                journal entries recording their skin progress.'
               tech={['Python', 'JavaScript', 'React', 'Redux', 'Flask', 'HTML', 'CSS', 'PostgreSQL', 'SQLAlchemy']}
               description=''
               githubURL='https://github.com/trnle/radiant'
               liveLink='https://radiantskin.herokuapp.com/'
-              images={[]}
+              images={[radSplash, radFeatures, radProducts, radProduct, radRoutines, radJournal, radEntry]}
             />
           </div>
         </div>

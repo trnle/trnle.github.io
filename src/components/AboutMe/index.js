@@ -13,7 +13,7 @@ function AboutMe() {
         <Contact />
       </div>
       <div id='introduction'>
-        <h2>Hi, I'm Tran! &#128105;&#127995;&#8205;&#128187;</h2>
+        <h1>Hi, I'm Tran! &#128105;&#127995;&#8205;&#128187;</h1>
         <div id='bio'>
           <p>
             I graduated from The University of Texas at Austin (Hook 'em &#129304;&#127996;)

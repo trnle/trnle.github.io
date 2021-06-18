@@ -62,7 +62,7 @@
 
 #bio p {
   margin-top: 6px;
-  overflow-y: scroll;
+  overflow: auto;
 }
 
 @media screen and (max-width: 1020px) and (min-width: 701px) {
