@@ -1,0 +1,25 @@
+.tech-used h4, .description h4 {
+  color: #cdd9e5;
+  margin-bottom: 5px;
+}
+
+.description {
+  margin-bottom: 80px;
+  width: 100%;
+  /* overflow-wrap: normal; */
+}
+
+.description p {
+  margin-top: 5px;
+  font-size: 16px;
+  word-break: normal;
+  white-space: normal;
+  /* word-wrap: normal; */
+}
+
+.goal-container li {
+  word-break: normal;
+  white-space: normal;
+  font-size: 16px;
+}
+

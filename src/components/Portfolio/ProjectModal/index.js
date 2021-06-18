@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import { Modal } from '../../../context/Modal';
+import './ProjectModal.css';
 
-function ProjectModal({ icon, altText, title, snippet, tech, description, githubURL, liveLink, images }) {
+function ProjectModal({ icon, altText, title, snippet, tech, description, challenges, goals, githubURL, liveLink, images }) {
   const [showModal, setShowModal] = useState(false);
   const viewProject = () => {
     setShowModal(true);
@@ -12,14 +13,14 @@ function ProjectModal({ icon, altText, title, snippet, tech, description, github
     setShowModal(false);
     document.body.style.overflow = 'scroll';
   }
-  
+
   return (
     <div className='project-modal'>
       <button className='view-btn' onClick={viewProject}>View</button>
       {showModal && (
         <Modal onClose={exitProject}>
           <div className='project-container w3-animate-opacity'>
-            <button className='exit-modal-btn' onClick={exitProject}>X</button> 
+            <button className='exit-modal-btn' onClick={exitProject}>X</button>
             <div className='overview-modal'>
               <img src={icon} alt={altText} height='87' />
               <div className='overview-title-snippet'>
@@ -58,7 +59,20 @@ function ProjectModal({ icon, altText, title, snippet, tech, description, github
                 )
               })}
             </div>
-            <div className='description'>{description}</div>
+            <div className='description'>
+              {description && <h4>More Info</h4>}
+              <p>{description}</p>
+              {challenges && <h4>Challenges</h4>}
+              <p>{challenges}</p>
+              {goals && <h4>Stretch Goals</h4>}
+              {goals.map(goal => {
+                return (
+                  <div key={goal} className='goal-container'>
+                    <li>{goal}</li>
+                  </div>
+                )
+              })}
+            </div>
           </div>
         </Modal>
       )}
