@@ -1,10 +1,79 @@
+.exit-modal-btn {
+  float: right;
+  margin: auto;
+  height: 30px;
+  width: 30px;
+  font-size: 14px;
+}
+
+.gh-ll-btns {
+  margin-right: 16px;
+}
+
+.github, .live-link {
+  float: right;
+  margin-right: 10px;
+  font-size: 14px;
+  padding: 4px 13px;
+}
+
+.github a, .live-link a {
+  text-decoration: none;
+  color: #adbac7;
+}
+
 .tech-used h4, .description h4 {
   color: #cdd9e5;
   margin-bottom: 5px;
 }
 
+.tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.tech-container {
+  display: inline-flex;
+  border: 1px solid rgba(173, 186, 199, 0.286);
+  border-radius: 8px;
+  margin: 8px 8px 0 0;
+  padding: 0 10px;
+  font-size: 14px;
+}
+
+.tech-container:hover {
+  border: 1px solid rgba(180, 193, 206, 0.699);
+}
+
+.tech-container p {
+  margin: 5px;
+}
+
+.project-gallery {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+  overflow-x: auto;
+  width: 100%;
+  animation-duration: 2s;
+}
+
+.slideshow-images {
+  display: inline-flex;
+  justify-content: center;
+  background-color: #2b313a;
+  border-radius: 18px;
+  padding: 30px;
+  margin-right: 20px;
+}
+
+.slideshow-images img {
+  border-radius: 8px;
+}
+
 .description {
-  margin-bottom: 80px;
+  margin: 20px 0 50px;
   width: 100%;
   /* overflow-wrap: normal; */
 }
@@ -23,3 +92,56 @@
   font-size: 16px;
 }
 
+@media screen and (max-width: 470px) {
+  .title-snippet {
+    /* display: none; */
+    max-width: 10px;
+  }
+
+  .title-snippet p {
+    width: 200px;
+  }
+
+  .title-snippet p, .title-snippet h4 {
+    margin: 0 0 0 10px;
+  }
+
+  .overview img {
+    margin-left: 50px;
+  }
+
+  .view-modal {
+    margin-right: 47px;
+  }
+
+  .gh-ll-btns {
+    float: inherit;
+    margin-right: 0;
+  }
+
+  .github, .live-link {
+    font-size: 12px;
+    padding: 4px 5px;
+  }
+
+  .overview-title-snippet h2 {
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .overview-modal {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: center;
+  }
+
+  .overview-modal img {
+    display: none;
+  }
+
+  .slideshow-images img {
+    height: 70vw;
+  }
+}

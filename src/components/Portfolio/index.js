@@ -61,7 +61,7 @@ function Portfolio() {
             />
           </div>
         </div>
-       <div className='overview'>
+        <div className='overview'>
           <img src={tradeMarianIcon} alt='TradeMarian logo with purple feather' height='70' />
           <div className='title-snippet'>
             <h4>TradeMarian</h4>
@@ -72,10 +72,15 @@ function Portfolio() {
               icon={tradeMarianIcon}
               altText='TradeMarian Icon'
               title='TradeMarian'
-              snippet='TradeMarian is a clone application of Robinhood, a stock trading and investing platform where users can buy, sell, and watch stocks in the market.'
+              snippet='TradeMarian is a clone application of Robinhood, a stock trading and investing platform where users can buy, sell, and watch stocks in the market. The TradeMarian name is based on Maid Marian, the heroine of Robin Hood.'
               tech={['Python', 'JavaScript', 'React', 'Redux', 'Flask', 'HTML', 'CSS', 'PostgreSQL', 'SQLAlchemy', 'IEX Cloud API', 'News API', 'Recharts']}
-              description=''
-              challenges=''
+              description="Utilizing the IEX Cloud API and News API was a fun learning experience since I hadn't used a third party API for my projects yet.
+              Being able to retrieve all of the financial data we needed made it much easier than having to seed data into our database.
+              I really enjoyed creating the stock performance graphs in which you can toggle around and view the different prices depending on the day. The graphs
+              also alter between colors pink and green based on the performance of the stock over time."
+              challenges="A challenge I faced was that I'd just learned the backend languages and frameworks we used for this application. There
+              were times where I was unsure of how to query for data on the backend since Flask/SQLAlchemy were
+              still new to me. Referencing the documentation and asking my teammates helped me immensely in these instances."
               goals={['Daily list of movers for top stocks']}
               githubURL='https://github.com/jmthorn/TradeMarian'
               liveLink='https://trademarian.herokuapp.com'
@@ -96,12 +101,17 @@ function Portfolio() {
               title='Puppr'
               snippet='Puppr, inspired by Flickr, is a photo sharing website centered around dogs. Users can upload and view photos, comment on photos, and create their own photo albums for dogs.'
               tech={['JavaScript', 'Express', 'Node', 'React', 'Redux', 'HTML', 'CSS', 'PostgreSQL', 'Sequelize']}
-              description='Combining my love for dogs and photography, I created this Flickr inspired application for users to come together and share their happy dogs.'
-              challenges=''
+              description="Combining my love for dogs and photography, I created this Flickr inspired application for users to come together and share their awesome dogs."
+              challenges="I wanted to create a clean design for the Explore page. On Flickr’s website, they have a photo grid 
+              displaying images from various users. I found that when styling using grid or flexbox, some photos 
+              would have extra whitespace depending on the size of the image. I researched guides and suggestions on how to 
+              create a seamless grid view of images. There were a lot of resources online and I gathered a few ideas that I could try implementing.
+              After trial and error of writing several different CSS declarations, I was finally able to create a 
+              photo grid using columns set to a certain width. It took some time but using my resources helped me achieve my visual goal for this project."
               goals={['Load more images button on Explore and Profile pages', 'Carousel on photo page showing photographers other photos in corresponding album', 'Photo tags', 'Search for users or photo titles', 'Favorites', 'Followers']}
               githubURL='https://github.com/trnle/puppr'
               liveLink='https://pupproni.herokuapp.com/'
-              images={[pupprHome, explore, createAlbum, commentsSection ]}
+              images={[pupprHome, explore, createAlbum, commentsSection]}
             />
           </div>
         </div>
@@ -129,7 +139,7 @@ function Portfolio() {
         </div>
       </div>
     </div>
-   
+
   )
 }
 
