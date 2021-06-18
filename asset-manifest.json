@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.363d72bc.chunk.css",
-    "main.js": "/static/js/main.be21657b.chunk.js",
-    "main.js.map": "/static/js/main.be21657b.chunk.js.map",
+    "main.css": "/static/css/main.c19bd002.chunk.css",
+    "main.js": "/static/js/main.cecb9044.chunk.js",
+    "main.js.map": "/static/js/main.cecb9044.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.b83279d6.js",
     "runtime-main.js.map": "/static/js/runtime-main.b83279d6.js.map",
     "static/js/2.3f113b54.chunk.js": "/static/js/2.3f113b54.chunk.js",
     "static/js/2.3f113b54.chunk.js.map": "/static/js/2.3f113b54.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.363d72bc.chunk.css.map": "/static/css/main.363d72bc.chunk.css.map",
+    "static/css/main.c19bd002.chunk.css.map": "/static/css/main.c19bd002.chunk.css.map",
     "static/js/2.3f113b54.chunk.js.LICENSE.txt": "/static/js/2.3f113b54.chunk.js.LICENSE.txt",
     "static/media/comments-section.b75cff9f.png": "/static/media/comments-section.b75cff9f.png",
     "static/media/create-album.1bfd7b76.png": "/static/media/create-album.1bfd7b76.png",
@@ -17,7 +17,14 @@
     "static/media/ggPlays-home.697bf706.png": "/static/media/ggPlays-home.697bf706.png",
     "static/media/portrait.79b02940.png": "/static/media/portrait.79b02940.png",
     "static/media/puppr-home.fd0479b9.png": "/static/media/puppr-home.fd0479b9.png",
+    "static/media/radiant-entry.d2841740.png": "/static/media/radiant-entry.d2841740.png",
+    "static/media/radiant-features.d004e976.png": "/static/media/radiant-features.d004e976.png",
     "static/media/radiant-icon.36eea83d.png": "/static/media/radiant-icon.36eea83d.png",
+    "static/media/radiant-journal.e84cbc25.png": "/static/media/radiant-journal.e84cbc25.png",
+    "static/media/radiant-product.2048208c.png": "/static/media/radiant-product.2048208c.png",
+    "static/media/radiant-products.1c4ae6b0.png": "/static/media/radiant-products.1c4ae6b0.png",
+    "static/media/radiant-routines.09268e36.png": "/static/media/radiant-routines.09268e36.png",
+    "static/media/radiant-splash.6f886ee0.png": "/static/media/radiant-splash.6f886ee0.png",
     "static/media/reviews.4bb59d6e.png": "/static/media/reviews.4bb59d6e.png",
     "static/media/shelves.c1aa1274.png": "/static/media/shelves.c1aa1274.png",
     "static/media/tm-login.4e270692.png": "/static/media/tm-login.4e270692.png",
@@ -29,7 +36,7 @@
   "entrypoints": [
     "static/js/runtime-main.b83279d6.js",
     "static/js/2.3f113b54.chunk.js",
-    "static/css/main.363d72bc.chunk.css",
-    "static/js/main.be21657b.chunk.js"
+    "static/css/main.c19bd002.chunk.css",
+    "static/js/main.cecb9044.chunk.js"
   ]
 }
