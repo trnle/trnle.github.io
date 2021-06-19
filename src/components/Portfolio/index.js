@@ -46,11 +46,11 @@ function Portfolio() {
                 journal entries to record their skin progress.'
               tech={['Python', 'JavaScript', 'React', 'Redux', 'Flask', 'HTML', 'CSS', 'PostgreSQL', 'SQLAlchemy', 'SweetAlert2', 'react-tabs']}
               description="The concept of a skincare routine application had been on my mind for a while but I'd yet developed 
-                the necessary skills to completely build it out. Using all the knowledge I learned over the last few months
-                to finally build this project was a rewarding experiencing! There are a plethora of skincare routines on the Internet,
-                but I wanted to create a skincare application where users don't have to feel overwhelmed
-                with a wide range of steps to follow. In my opinion, skincare should be made simple and that's what I wanted this application to feel like.
-                Clean, minimal, and easy to use."
+              the necessary skills to completely build it out. Using all the knowledge I learned over the last few months
+              to finally build this project was a rewarding experiencing! There are a plethora of skincare routines on the Internet,
+              but I wanted to create a skincare application where users don't have to feel overwhelmed
+              with a wide range of steps to follow. In my opinion, skincare should be made simple and that's what I wanted this application to feel like.
+              Clean, minimal, and easy to use."
               // challenges="One of the challenges I faced during this project was creating a journal entry when the user completed a routine.
               // With two routines available to complete, an AM and/or PM routine, the entry should either be created or updated depending on whether the
               // user submitted a routine for that day."
@@ -119,7 +119,7 @@ function Portfolio() {
           <img src={ggPlaysIcon} alt="ggPlays two g's logo" height='70' />
           <div className='title-snippet'>
             <h4>ggPlays</h4>
-            <p>Video game reviews application.</p>
+            <p>Game reviews application.</p>
           </div>
           <div className='view-modal'>
             <ProjectModal
@@ -128,8 +128,10 @@ function Portfolio() {
               title='ggPlays'
               snippet='ggPlays is a web application that allows users to view various video games, publish game reviews, and catalog games into game shelves that can be customized.'
               tech={['JavaScript', 'Express', 'PostgreSQL', 'Node', 'Sequelize', 'HTML', 'CSS', 'Pug']}
-              description=''
-              challenges=''
+              description="As my first project, I learned a great deal from ggPlays. The concept and functionality was
+              based on Goodreads, however, we designed the website from scratch. I learned about UI/UX, how to style with CSS,
+              and how to rerender information on a page without a page refresh."
+              challenges=""
               goals={['Reputation score for reviewers', 'Search games feature', 'Delete game(s) from a gameshelf']}
               githubURL='https://github.com/Hieu-Ma/ggplays/'
               liveLink='https://ggplays.herokuapp.com/'

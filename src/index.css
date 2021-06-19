@@ -42,3 +42,12 @@ h3 {
   color: #cdd9e5;
   font-weight: bold;
 }
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
