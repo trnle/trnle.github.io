@@ -2,13 +2,13 @@ function Contact() {
   return (
     <>
       <div id='contact-links'>
-        <a href='https://www.linkedin.com/in/trnle'>
+        <a href='https://www.linkedin.com/in/trnle' target='_blank' rel='noreferrer'>
           <i className='fab fa-linkedin'></i>
         </a>
-        <a href='https://github.com/trnle'>
+        <a href='https://github.com/trnle' target='_blank' rel='noreferrer'>
           <i className='fab fa-github'></i>
         </a>
-        <a href='https://angel.co/u/tran-le-5'>
+        <a href='https://angel.co/u/tran-le-5' target='_blank' rel='noreferrer'>
           <i className='fab fa-angellist'></i>
         </a>
         <a href='mailto:tranle97@gmail.com'>

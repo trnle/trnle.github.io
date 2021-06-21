@@ -26,10 +26,10 @@ function ProjectModal({ icon, altText, title, snippet, tech, description, challe
               <div className='overview-title-snippet'>
                 <div className='gh-ll-btns'>
                   <button className='github'>
-                    <a href={githubURL}>GitHub</a>
+                    <a href={githubURL} target='_blank' rel='noreferrer'>GitHub</a>
                   </button>
                   <button className='live-link'>
-                    <a href={liveLink}>Visit Site</a>
+                    <a href={liveLink} target='_blank' rel='noreferrer'>Visit Site</a>
                   </button>
                 </div>
                 <h2>{title}</h2>
