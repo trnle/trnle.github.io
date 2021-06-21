@@ -14,7 +14,6 @@ function Skills() {
         <i className="devicon-css3-plain-wordmark colored"></i>
         <i className="devicon-postgresql-plain-wordmark colored"></i>
         <i className="devicon-express-original"></i>
-        <i className="devicon-heroku-plain-wordmark colored"></i>
         <i className="devicon-sequelize-plain colored"></i>
         <i className="devicon-flask-original-wordmark"></i>
       </div>
