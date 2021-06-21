@@ -1,10 +1,10 @@
 #skills {
-  margin: 60px 0 30px;
+  padding-top: 120px;
 }
 
 #skills h3 {
-  padding-top: 40px;
   margin-bottom: 30px;
+  font-size: 25px;
 }
 
 #skills-container {

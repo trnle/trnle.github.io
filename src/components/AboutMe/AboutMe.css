@@ -63,6 +63,7 @@
 
 #bio p {
   margin-top: 6px;
+  margin-bottom: 0;
   overflow: auto;
 }
 

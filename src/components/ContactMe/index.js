@@ -22,14 +22,14 @@ function ContactMe() {
   }
 
   return (
-    <div id='contact-me-container'>
+    <div id='contact-me'>
       <h3>Contact Me</h3>
       <div id='contact-me-form'>
         <form className="contact-form" onSubmit={sendEmail}>
           <input type="hidden" name="contact_number" />
           <label>Full Name</label>
           <input type="text" name="from_name" placeholder='Full Name' required/>
-          <label>Email</label>
+          <label>Email Address</label>
           <input type="email" name="user_email" placeholder='Email' required/>
           <label>Message</label>
           <textarea name="message" placeholder="Let's Talk!" required/>
