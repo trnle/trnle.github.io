@@ -1,12 +1,20 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-scroll";
 import './Navigation.css';
 
 function Navigation() {
-  const aboutMeDiv = document.getElementById('about-me');
-  const portfolioDiv = document.getElementById('portfolio');
-  const skillsDiv = document.getElementById('skills');
-  const contactMeDiv = document.getElementById('contact-me');
+
+  let aboutMeDiv;
+  let portfolioDiv;
+  let skillsDiv;
+  let contactMeDiv;
+
+  useEffect(() => {
+    aboutMeDiv = document.getElementById('about-me');
+    portfolioDiv = document.getElementById('portfolio');
+    skillsDiv = document.getElementById('skills');
+    contactMeDiv = document.getElementById('contact-me');
+  }, [])
 
   return (
     <nav>
