@@ -1,7 +1,11 @@
+import resume from '../../images/Le_Tran_Resume.pdf';
 function Contact() {
   return (
     <>
       <div id='contact-links'>
+        <a href={resume} target='_blank' rel='noreferrer'>
+          <i className="far fa-file"></i>
+        </a>
         <a href='https://www.linkedin.com/in/trnle' target='_blank' rel='noreferrer'>
           <i className='fab fa-linkedin'></i>
         </a>
@@ -14,9 +18,6 @@ function Contact() {
         <a href='mailto:tranle97@gmail.com'>
           <i className='fas fa-envelope'></i>
         </a>
-        {/* <a href=''>
-          <i className="fas fa-file"></i>
-        </a> */}
       </div>
     </>
   )

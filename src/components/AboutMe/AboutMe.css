@@ -37,13 +37,13 @@
   margin: 0 5px;
 }
 
-.fab, .fas {
+.fab, .fas, .far {
   font-size: 2vw;
   margin: 0 15px;
   color: #97a2ad;
 }
 
-.fab:hover, .fas:hover {
+.fab:hover, .fas:hover, .far:hover {
   transition-duration: 0.3s;
   color: #cdd9e5;
 }
@@ -73,7 +73,7 @@
     flex-direction: column;
   }
 
-  .fab, .fas {
+  .fab, .fas, .far {
     font-size: 3vw;
   }
 }
@@ -89,7 +89,7 @@
     align-self: flex-start;
   }
 
-  .fab, .fas {
+  .fab, .fas, .far {
     font-size: 3.5vw;
   }
 
@@ -113,7 +113,7 @@
     align-self: flex-start;
   }
 
-  .fab, .fas {
+  .fab, .fas, .far {
     font-size: 5vw;
   }
 
