@@ -130,8 +130,11 @@ function Portfolio() {
               tech={['JavaScript', 'Express', 'PostgreSQL', 'Node', 'Sequelize', 'HTML', 'CSS', 'Pug']}
               description="As my first project, I learned a great deal from ggPlays. The concept and functionality was
               based on Goodreads, however, we designed the website from scratch. I learned about UI/UX, how to style with CSS,
-              and how to rerender information on a page without a page refresh."
-              challenges=""
+              and how to rerender information without a page refresh."
+              challenges="Using Pug templating to render HTML was a great challenge for my first major and first team project. One of the challenges of using Pug for this project was when I
+              needed to create edit and delete functionality for a user's custom gameshelves. During development, clicking on one edit button resulted in all of the edit buttons for the shelves being clicked.
+              I realized that each button required unique IDs that would correspond to its unique custom shelf. Retrieving and manipulating the DOM to complete this functionality took much longer than
+              anticipated but we were able to complete the functionality as well as do so without page refreshes!"
               goals={['Reputation score for reviewers', 'Search games feature', 'Delete game(s) from a gameshelf']}
               githubURL='https://github.com/Hieu-Ma/ggplays/'
               liveLink='https://ggplays.herokuapp.com/'
