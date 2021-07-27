@@ -1,9 +1,8 @@
-import resume from '../../images/Le_Tran_Resume.pdf';
 function Contact() {
   return (
     <>
       <div id='contact-links'>
-        <a href={resume} target='_blank' rel='noreferrer'>
+        <a href='./Le_Tran_Resume.pdf' target='_blank' rel='noreferrer'>
           <i className="far fa-file"></i>
         </a>
         <a href='https://www.linkedin.com/in/trnle' target='_blank' rel='noreferrer'>
