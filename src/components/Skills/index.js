@@ -16,6 +16,9 @@ function Skills() {
         <i className="devicon-express-original"></i>
         <i className="devicon-sequelize-plain colored"></i>
         <i className="devicon-flask-original-wordmark"></i>
+        <i className="devicon-git-plain-wordmark colored"></i>
+        <i className="devicon-heroku-original-wordmark colored"></i>
+        <i className="devicon-xd-line"></i>
       </div>
     </div>
   )
