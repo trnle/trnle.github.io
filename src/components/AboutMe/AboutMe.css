@@ -37,6 +37,11 @@
   margin: 0 5px;
 }
 
+.visible {
+  height: 3em;
+  width: 10em;
+}
+
 .fab, .fas, .far {
   font-size: 2vw;
   margin: 0 15px;
