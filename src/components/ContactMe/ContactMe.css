@@ -23,12 +23,12 @@
   border-radius: 7px;
   padding: 5px 10px;
   margin-bottom: 15px;
-  background-color: rgb(235, 235, 235);
+  background-color: rgb(236, 235, 235);
   border-color: transparent;
 }
 
 .contact-form input:hover, .contact-form textarea:hover {
-  background-color: whitesmoke;
+  background-color: white;
 }
 
 .contact-form input:focus, .contact-form textarea:focus {
@@ -44,7 +44,7 @@
   max-height: 220px;
   border-radius: 7px;
   padding: 5px 10px;
-  background-color: rgb(235, 235, 235);
+  background-color: rgb(236, 235, 235);
   border-color: transparent;
 }
 
