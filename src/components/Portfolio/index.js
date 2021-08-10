@@ -44,7 +44,7 @@ function Portfolio() {
               title='Radiant'
               snippet='Create a personalized routine for your skincare and beauty treatments. Users can keep track of their morning and nighttime skincare routines as well as create
                 journal entries to record their skin progress.'
-              tech={['Python', 'JavaScript', 'React', 'Redux', 'Flask', 'HTML', 'CSS', 'PostgreSQL', 'SQLAlchemy', 'SweetAlert2', 'react-tabs']}
+              tech={['Python', 'JavaScript', 'React', 'Redux', 'Flask', 'HTML', 'CSS', 'PostgreSQL', 'SQLAlchemy', 'SweetAlert2', 'react-tabs', 'Docker', 'Heroku', 'Adobe XD']}
               description="The concept of a skincare routine application had been on my mind for a while but I'd yet developed 
               the necessary skills to completely build it out. Using all the knowledge I learned over the last few months
               to finally build this project was a rewarding experiencing! There are a plethora of skincare routines on the Internet,
@@ -73,7 +73,7 @@ function Portfolio() {
               altText='TradeMarian Icon'
               title='TradeMarian'
               snippet='TradeMarian is a clone application of Robinhood, a stock trading and investing platform where users can buy, sell, and watch stocks in the market. The TradeMarian name is based on Maid Marian, the heroine of Robin Hood.'
-              tech={['Python', 'JavaScript', 'React', 'Redux', 'Flask', 'HTML', 'CSS', 'PostgreSQL', 'SQLAlchemy', 'IEX Cloud API', 'News API', 'Recharts']}
+              tech={['Python', 'JavaScript', 'React', 'Redux', 'Flask', 'HTML', 'CSS', 'PostgreSQL', 'SQLAlchemy', 'IEX Cloud API', 'News API', 'Recharts', 'Docker', 'Heroku']}
               description="Utilizing the IEX Cloud API and News API was a fun learning experience since I hadn't used a third party API for my projects yet.
               Being able to retrieve all of the financial data we needed made it much easier than having to seed data into our database.
               I really enjoyed creating the stock performance graphs in which you can toggle around and view the different prices depending on the day. The graphs
@@ -100,7 +100,7 @@ function Portfolio() {
               altText='Puppr Icon showing dog'
               title='Puppr'
               snippet='Puppr, inspired by Flickr, is a photo sharing website centered around dogs. Users can upload and view photos, comment on photos, and create their own photo albums for dogs.'
-              tech={['JavaScript', 'Express', 'Node', 'React', 'Redux', 'HTML', 'CSS', 'PostgreSQL', 'Sequelize']}
+              tech={['JavaScript', 'Express', 'Node', 'React', 'Redux', 'HTML', 'CSS', 'PostgreSQL', 'Sequelize', 'Heroku', 'Adobe XD']}
               description="Combining my love for dogs and photography, I created this Flickr inspired application for users to come together and share their awesome dogs."
               challenges="I wanted to create a clean design for the Explore page. On Flickr’s website, they have a photo grid 
               displaying images from various users. I found that when styling using grid or flexbox, some photos 
@@ -127,7 +127,7 @@ function Portfolio() {
               altText='ggPlays icon'
               title='ggPlays'
               snippet='ggPlays is a web application that allows users to view various video games, publish game reviews, and catalog games into game shelves that can be customized.'
-              tech={['JavaScript', 'Express', 'PostgreSQL', 'Node', 'Sequelize', 'HTML', 'CSS', 'Pug']}
+              tech={['JavaScript', 'Express', 'PostgreSQL', 'Node', 'Sequelize', 'HTML', 'CSS', 'Pug', 'Heroku', 'Adobe XD']}
               description="As my first project, I learned a great deal from ggPlays. The concept and functionality was
               based on Goodreads, however, we designed the website from scratch. I learned about UI/UX, how to style with CSS,
               and how to rerender information without a page refresh."
