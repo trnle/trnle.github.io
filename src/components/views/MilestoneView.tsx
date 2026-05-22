@@ -50,7 +50,7 @@ export default function MilestoneView({ onNavigate }: Props) {
         fig 1 · the dashboard, may 2026
       </p>
 
-      <h2><span className="hash">##</span> the design case study</h2>
+      <h2><span className="hash">##</span> the design preview</h2>
       <blockquote>
         A design preview lives at{' '}
         <a href="https://trnle.github.io/milestone-public/" target="_blank" rel="noopener noreferrer">trnle.github.io/milestone-public ↗</a>.
