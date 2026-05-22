@@ -53,10 +53,24 @@ html, body {
 a { color: var(--accent); text-decoration: underline; text-underline-offset: 3px; }
 a:hover { color: var(--accent-2); }
 
+/* ── Font rendering (cross-platform) ───────────────────────── */
+html {
+  -webkit-font-smoothing: antialiased;    /* macOS/Chrome */
+  -moz-osx-font-smoothing: grayscale;     /* Firefox macOS */
+  /* Windows uses ClearType — leave it alone, it looks good */
+}
+
 /* ── Scrollbars ─────────────────────────────────────────────── */
-::-webkit-scrollbar { width: 4px; height: 4px; }
-::-webkit-scrollbar-track { background: var(--paper-2); }
-::-webkit-scrollbar-thumb { background: var(--rule-2); border-radius: 2px; }
+/* Firefox (Windows/Linux) */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--rule-2) transparent;
+}
+/* Webkit — Chrome, Safari, Edge */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--rule-2); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: var(--ink-4); }
 
 /* ── Site wrapper ───────────────────────────────────────────── */
 .site-wrapper {
@@ -124,7 +138,7 @@ a:hover { color: var(--accent-2); }
 .tree-cmd:hover { background: var(--paper); color: var(--ink-2); }
 .tree-cmd .cmd-key {
   margin-left: auto;
-  font-size: 10px;
+  font-size: 11px;
   padding: 1px 4px;
   background: var(--paper);
   border: 1px solid var(--rule-2);
@@ -133,7 +147,7 @@ a:hover { color: var(--accent-2); }
 }
 
 .tree-group-label {
-  font-size: 10px;
+  font-size: 11px;
   text-transform: uppercase;
   letter-spacing: 0.08em;
   color: var(--ink-4);
@@ -192,7 +206,7 @@ a:hover { color: var(--accent-2); }
   font-family: var(--font-mono);
   cursor: default;
 }
-.tree-folder-row .caret { font-size: 9px; }
+.tree-folder-row .caret { font-size: 10px; }
 
 .tree-hint {
   margin-top: var(--s-6);
@@ -224,10 +238,10 @@ a:hover { color: var(--accent-2); }
 .breadcrumb a:hover { color: var(--accent); }
 .breadcrumb .sep { color: var(--ink-4); }
 
-/* 07 - h1: Inter 700 44px -0.02em */
+/* 07 — h1 */
 .md-doc h1 {
   font-family: var(--font-prose);
-  font-size: 44px;
+  font-size: clamp(36px, 3.5vw, 52px);
   font-weight: 700;
   line-height: 1.05;
   letter-spacing: -0.02em;
@@ -237,10 +251,10 @@ a:hover { color: var(--accent-2); }
   border-bottom: 1px solid var(--rule);
 }
 
-/* 07 - h2: Inter 600 22px */
+/* 07 — h2 */
 .md-doc h2 {
   font-family: var(--font-prose);
-  font-size: 22px;
+  font-size: clamp(20px, 1.6vw, 28px);
   font-weight: 600;
   line-height: 1.2;
   color: var(--ink);
@@ -249,39 +263,39 @@ a:hover { color: var(--accent-2); }
   border-bottom: 1px solid var(--rule);
 }
 
-/* 07 - h3: Inter 600 16px */
+/* 07 — h3 */
 .md-doc h3 {
   font-family: var(--font-prose);
-  font-size: 16px;
+  font-size: clamp(15px, 1.1vw, 19px);
   font-weight: 600;
   margin: var(--s-6) 0 var(--s-2);
   color: var(--ink);
 }
 
-/* Hash prefix - ink-4, mono, decorative */
+/* Hash prefix — ink-4, mono, decorative */
 .hash {
   font-family: var(--font-mono);
   color: var(--ink-4);
   font-weight: 400;
   margin-right: 6px;
-  font-size: 0.85em;
+  font-size: 0.8em;
 }
 
-/* 07 - body: Inter 400 14px 1.6 */
+/* 07 — body: 16px base (was 14px — bumped for readability on large screens) */
 .md-doc p {
   font-family: var(--font-prose);
-  font-size: 14px;
+  font-size: clamp(15px, 1.05vw, 18px);
   color: var(--ink-2);
   margin: var(--s-2) 0;
   max-width: 70ch;
-  line-height: 1.65;
+  line-height: 1.7;
 }
 .md-doc p strong { color: var(--ink); font-weight: 600; }
 .md-doc p em { font-style: italic; }
 
-/* Lead paragraph - 07 15px italic ink-2 */
+/* Lead paragraph */
 .md-doc .lead {
-  font-size: 15px;
+  font-size: clamp(16px, 1.15vw, 20px);
   font-style: italic;
   color: var(--ink-2);
   margin: var(--s-2) 0 var(--s-6);
@@ -291,12 +305,12 @@ a:hover { color: var(--accent-2); }
 }
 
 .md-doc ul, .md-doc ol {
-  font-size: 14px;
+  font-size: clamp(15px, 1.05vw, 18px);
   color: var(--ink-2);
   padding-left: var(--s-6);
   margin: var(--s-2) 0;
 }
-.md-doc li { padding: 3px 0; line-height: 1.6; }
+.md-doc li { padding: 4px 0; line-height: 1.7; }
 .md-doc li::marker { color: var(--ink-4); }
 
 /* 08 NowCallout */
@@ -305,9 +319,9 @@ a:hover { color: var(--accent-2); }
   padding: var(--s-3) var(--s-4);
   border-left: 3px solid var(--accent);
   background: var(--accent-faint);
-  font-size: 13.5px;
+  font-size: clamp(14px, 1vw, 17px);
   color: var(--ink);
-  line-height: 1.7;
+  line-height: 1.75;
   border-radius: 0 var(--r-md) var(--r-md) 0;
 }
 
@@ -355,7 +369,7 @@ a:hover { color: var(--accent-2); }
   border-radius: var(--r-sm);
   overflow: hidden;
   font-family: var(--font-mono);
-  font-size: 10px;
+  font-size: 11px;
   letter-spacing: 0.03em;
   height: 22px;
 }
@@ -389,7 +403,7 @@ a:hover { color: var(--accent-2); }
 }
 .toc-box strong {
   font-family: var(--font-mono);
-  font-size: 10px;
+  font-size: 11px;
   text-transform: uppercase;
   letter-spacing: 0.08em;
   color: var(--ink-3);
@@ -440,7 +454,7 @@ a:hover { color: var(--accent-2); }
   align-items: center;
   justify-content: center;
   font-family: var(--font-mono);
-  font-size: 10px;
+  font-size: 11px;
   text-transform: uppercase;
   letter-spacing: 1px;
   color: var(--ink-4);
@@ -505,7 +519,7 @@ a:hover { color: var(--accent-2); }
   align-items: center;
   gap: 5px;
   font-family: var(--font-mono);
-  font-size: 10px;
+  font-size: 11px;
   padding: 2px 7px;
   border: 1px solid var(--accent-soft);
   border-radius: var(--r-pill);
@@ -530,7 +544,7 @@ a:hover { color: var(--accent-2); }
   justify-content: center;
   gap: var(--s-2);
   font-family: var(--font-mono);
-  font-size: 10px;
+  font-size: 11px;
   color: var(--ink-3);
   text-transform: uppercase;
   letter-spacing: 0.06em;
@@ -540,7 +554,7 @@ a:hover { color: var(--accent-2); }
 }
 .photo-frame:hover { border-color: var(--rule-2); }
 .photo-frame .photo-emoji { font-size: 28px; }
-.photo-frame .photo-cap { font-size: 10px; color: var(--ink-3); }
+.photo-frame .photo-cap { font-size: 11px; color: var(--ink-3); }
 
 /* Experience list */
 .exp-list { list-style: none; padding: 0; margin: 0; }
@@ -561,7 +575,7 @@ a:hover { color: var(--accent-2); }
 /* Now callout */
 .now-stamp {
   font-family: var(--font-mono);
-  font-size: 10px;
+  font-size: 11px;
   color: var(--ink-4);
   text-transform: uppercase;
   letter-spacing: 0.08em;
@@ -624,7 +638,7 @@ a:hover { color: var(--accent-2); }
 .cmd-results { max-height: 320px; overflow-y: auto; }
 .cmd-section-label {
   font-family: var(--font-mono);
-  font-size: 10px;
+  font-size: 11px;
   text-transform: uppercase;
   letter-spacing: 0.08em;
   color: var(--ink-4);
@@ -723,4 +737,48 @@ a:hover { color: var(--accent-2); }
   .proj-card { grid-template-columns: 1fr; }
   .proj-thumb { aspect-ratio: 16/9; }
   .proj-body { padding: var(--s-4); }
+}
+
+/* ── Large monitors ≥1920px ─────────────────────────────────── */
+@media (min-width: 1920px) {
+  .md-doc {
+    max-width: 1100px;
+    padding: 56px 72px 100px;
+  }
+  .md-doc table { font-size: 14px; }
+  .codeblock { font-size: 14px; }
+  .badge { font-size: 12px; height: 24px; }
+  .chip { font-size: 12px; padding: 3px 10px; }
+  .proj-body { padding: var(--s-6); }
+  .proj-card { grid-template-columns: 380px 1fr; }
+  .toc-box li { font-size: 15px; }
+}
+
+/* ── 4K monitors ≥2560px ────────────────────────────────────── */
+@media (min-width: 2560px) {
+  .readme-wrap { grid-template-columns: 340px 1fr; }
+  .tree {
+    width: 340px;
+    font-size: 14px;
+    padding: var(--s-6) var(--s-4);
+  }
+  .tree-item { font-size: 13px; min-height: 32px; }
+  .tree-group-label { font-size: 12px; }
+  .tree-hint { font-size: 12px; }
+  .md-doc {
+    max-width: 1300px;
+    padding: 72px 88px 120px;
+  }
+  .md-doc table { font-size: 15px; }
+  .codeblock { font-size: 15px; line-height: 1.8; }
+  .badge { font-size: 13px; height: 26px; }
+  .chip { font-size: 13px; padding: 4px 12px; }
+  .proj-card { grid-template-columns: 440px 1fr; }
+  .breadcrumb { font-size: 14px; }
+  .toc-box { max-width: 480px; }
+  .toc-box li { font-size: 16px; }
+  .exp-role { font-size: 16px; }
+  .exp-org { font-size: 15px; }
+  .exp-impact { font-size: 14px; }
+  .exp-period { font-size: 13px; }
 }

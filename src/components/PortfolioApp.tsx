@@ -79,7 +79,7 @@ export default function PortfolioApp() {
           onCmdOpen={() => setCmdOpen(true)}
         />
 
-        <main ref={mainRef} style={{ overflowY: 'auto', height: '100vh' }}>
+        <main ref={mainRef} style={{ overflowY: 'auto', height: '100vh', scrollbarGutter: 'stable' }}>
           {active === '/'                   && <ReadmeView     onNavigate={navigate} />}
           {active === '/projects/milestone' && <MilestoneView  onNavigate={navigate} />}
           {active === '/projects/radiant'   && <RadiantView    onNavigate={navigate} />}
