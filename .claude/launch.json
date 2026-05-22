@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "portfolio-dev",
+      "runtimeExecutable": "/Users/tran/.nvm/versions/node/v20.20.0/bin/node",
+      "runtimeArgs": ["node_modules/.bin/next", "dev", "--port", "3000"],
+      "port": 3000
+    }
+  ]
+}

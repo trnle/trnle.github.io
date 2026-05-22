@@ -1,0 +1,25 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cp src/images/portrait.png public/portrait.png)",
+      "Bash(mkdir -p public/milestone)",
+      "Bash(cp /Users/tran/Documents/milestone-public/design/screens/01-dashboard.png public/milestone/dashboard.png)",
+      "Bash(cp /Users/tran/Documents/milestone-public/design/screens/03-inline-task-creation.png public/milestone/inline-task.png)",
+      "Bash(cp /Users/tran/Documents/milestone-public/design/screens/02-daily-surfaces-week.png public/milestone/weekly.png)",
+      "Bash(brew list *)",
+      "Read(//usr/local/bin/**)",
+      "Read(//opt/homebrew/**)",
+      "Bash(nvm install *)",
+      "Read(//Users/tran/.nvm/alias/**)",
+      "Read(//Users/tran/.nvm/versions/node/**)",
+      "Bash(~/.nvm/versions/node/v20.20.0/bin/node --version)",
+      "mcp__Claude_Preview__preview_start",
+      "mcp__Claude_in_Chrome__tabs_context_mcp",
+      "Bash(curl -s http://localhost:3000)",
+      "WebFetch(domain:api.anthropic.com)",
+      "Bash(gunzip -c \"/Users/tran/.claude/projects/-Users-tran-Documents-trnle-github-io/31eea57d-a648-44c7-b6f1-e341d6bd965b/tool-results/webfetch-1779471781835-r2tk4m.bin\")",
+      "Bash(tar -xO \"portfolio/project/README direction - handoff wireframes.html\")",
+      "Bash(gunzip -c \"/Users/tran/.claude/projects/-Users-tran-Documents-trnle-github-io/31eea57d-a648-44c7-b6f1-e341d6bd965b/tool-results/webfetch-1779471781835-r2tk4m.bin\" 2>/dev/null | tar -xO \"portfolio/project/README direction - handoff wireframes.html\" > /tmp/handoff.html 2>/dev/null && echo \"extracted $\\(wc -c < /tmp/handoff.html\\) bytes\")"
+    ]
+  }
+}
