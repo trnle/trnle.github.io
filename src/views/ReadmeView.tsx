@@ -1,5 +1,6 @@
-import Image from 'next/image'
-import type { FilePath } from '../PortfolioApp'
+import type { FilePath } from './PortfolioApp'
+import ProjectCard from '../components/ProjectCard'
+import { Badge, BadgeRow, PulseDot } from '../components/Badge'
 
 interface Props { onNavigate: (p: FilePath) => void }
 
@@ -12,6 +13,8 @@ const NavLink = ({ path, children, onNavigate }: { path: FilePath; children: Rea
   </button>
 )
 
+const Sep = () => <span className="sep" style={{ color: 'var(--ink-4)', margin: '0 4px' }}>·</span>
+
 export default function ReadmeView({ onNavigate }: Props) {
   return (
     <div className="md-doc">
@@ -19,14 +22,13 @@ export default function ReadmeView({ onNavigate }: Props) {
         <span>trnle</span><span className="sep">/</span><strong>README.md</strong>
       </div>
 
-      {/* Status badges */}
-      <div className="badge-row">
-        <span className="badge"><span className="bl">role</span><span className="br">full-stack engineer</span></span>
-        <span className="badge green"><span className="bl">status</span><span className="br"><span className="pulse-dot" />open to chat</span></span>
-        <span className="badge"><span className="bl">based</span><span className="br">seattle, WA</span></span>
-        <span className="badge yellow"><span className="bl">stack</span><span className="br">ts · react · node · python</span></span>
-        <span className="badge"><span className="bl">last commit</span><span className="br">5/22/26</span></span>
-      </div>
+      <BadgeRow>
+        <Badge label="role"        value="full-stack engineer" />
+        <Badge label="status"      value={<><PulseDot />open to chat</>} tone="green" />
+        <Badge label="based"       value="seattle, WA" />
+        <Badge label="stack"       value="ts · react · node · python" tone="yellow" />
+        <Badge label="last commit" value="5/22/26" />
+      </BadgeRow>
 
       <h1><span className="hash">#</span> tran le</h1>
       <span className="lead">
@@ -57,55 +59,42 @@ export default function ReadmeView({ onNavigate }: Props) {
 
       <h2 id="projects"><span className="hash">##</span> featured projects</h2>
 
-      <div className="proj-card" onClick={() => onNavigate('/projects/milestone')}>
-        <div className="proj-thumb" style={{ position: 'relative' }}>
-          <Image src="/milestone/dashboard.png" alt="Milestone dashboard" fill style={{ objectFit: 'cover', objectPosition: 'top' }} />
-        </div>
-        <div className="proj-body">
-          <div className="proj-title">
-            📌 milestone
-            <span className="live-badge"><span className="pulse-dot" />in progress</span>
-          </div>
-          <div className="proj-tags">
-            {['typescript', 'react', 'vite', 'node', 'supabase', 'design-led', 'ai'].map(t => (
-              <span key={t} className="chip">{t}</span>
-            ))}
-          </div>
-          <p className="proj-desc">
-            Full-stack personal project taken from design to development.
-          </p>
-          <div className="proj-links">
-            <NavLink path="/projects/milestone" onNavigate={onNavigate}>details ↗</NavLink>
-            <span className="sep">·</span>
-            <a href="https://trnle.github.io/milestone-public/" target="_blank" rel="noopener noreferrer" onClick={e => e.stopPropagation()}>design preview ↗</a>
-            <span className="sep">·</span>
-            <a href="https://github.com/trnle/milestone-public" target="_blank" rel="noopener noreferrer" onClick={e => e.stopPropagation()}>repo ↗</a>
-          </div>
-        </div>
-      </div>
+      <ProjectCard
+        onClick={() => onNavigate('/projects/milestone')}
+        thumb={{ src: '/milestone/dashboard.png', alt: 'Milestone dashboard' }}
+        title={<>📌 milestone <span className="live-badge"><PulseDot />in progress</span></>}
+        tags={['typescript', 'react', 'vite', 'node', 'supabase', 'design-led', 'ai']}
+        description="Full-stack personal project taken from design to development."
+        links={<>
+          <NavLink path="/projects/milestone" onNavigate={onNavigate}>details ↗</NavLink>
+          <Sep />
+          <a href="https://trnle.github.io/milestone-public/" target="_blank" rel="noopener noreferrer" onClick={e => e.stopPropagation()}>design preview ↗</a>
+          <Sep />
+          <a href="https://github.com/trnle/milestone-public" target="_blank" rel="noopener noreferrer" onClick={e => e.stopPropagation()}>repo ↗</a>
+        </>}
+      />
 
-      <div className="proj-card" onClick={() => onNavigate('/projects/radiant')}>
-        <div className="proj-thumb" style={{ position: 'relative' }}>
-          <Image src="/radiant/product-board.png" alt="Radiant product dashboard" fill style={{ objectFit: 'cover', objectPosition: 'top' }} />
-        </div>
-        <div className="proj-body">
-          <div className="proj-title">📌 radiant</div>
-          <div className="proj-tags">
-            {['javascript', 'python', 'react', 'flask', 'postgres', 'docker'].map(t => (
-              <span key={t} className="chip">{t}</span>
-            ))}
-          </div>
-          <p className="proj-desc">
-            A skincare routine tracker where users build AM/PM routines and log daily journal
-            entries to track their skin over time. Clean, minimal, no overwhelm.
-          </p>
-          <div className="proj-links">
-            <NavLink path="/projects/radiant" onNavigate={onNavigate}>details ↗</NavLink>
-            <span className="sep">·</span>
-            <a href="https://github.com/trnle/radiant" target="_blank" rel="noopener noreferrer" onClick={e => e.stopPropagation()}>repo ↗</a>
-          </div>
-        </div>
-      </div>
+      <ProjectCard
+        onClick={() => window.open('/design/wireframes.html', '_blank', 'noopener')}
+        thumb={{ src: '/design/wireframe.png', alt: 'Portfolio design wireframes', plain: true }}
+        title="📌 this site"
+        tags={['claude design', 'claude code', 'next.js', 'css', 'design system', 'github actions']}
+        description="Designed in Claude Design, built with Claude Code. README metaphor with handoff spec, tokens, components, and build checklist."
+        links={<a href="/design/wireframes.html" target="_blank" rel="noopener noreferrer" onClick={e => e.stopPropagation()}>wireframes ↗</a>}
+      />
+
+      <ProjectCard
+        onClick={() => onNavigate('/projects/radiant')}
+        thumb={{ src: '/radiant/product-board.png', alt: 'Radiant product dashboard' }}
+        title="📌 radiant"
+        tags={['javascript', 'python', 'react', 'flask', 'postgres', 'docker']}
+        description="A skincare routine tracker where users build AM/PM routines and log daily journal entries to track their skin over time. Clean, minimal, no overwhelm."
+        links={<>
+          <NavLink path="/projects/radiant" onNavigate={onNavigate}>details ↗</NavLink>
+          <Sep />
+          <a href="https://github.com/trnle/radiant" target="_blank" rel="noopener noreferrer" onClick={e => e.stopPropagation()}>repo ↗</a>
+        </>}
+      />
 
       <h2 id="stack"><span className="hash">##</span> tech stack</h2>
       <table>
@@ -148,7 +137,7 @@ export default function ReadmeView({ onNavigate }: Props) {
         </li>
         <br />
         <div className="proj-links">
-          <NavLink path="/experience" onNavigate={onNavigate}>checkout my full experience ↗</NavLink>
+          <NavLink path="/career/experience" onNavigate={onNavigate}>check out my full experience →</NavLink>
         </div>
       </ul>
 

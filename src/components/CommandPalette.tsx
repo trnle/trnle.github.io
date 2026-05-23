@@ -1,12 +1,13 @@
 'use client'
 import { useState, useEffect, useRef } from 'react'
-import type { FilePath } from './PortfolioApp'
+import type { FilePath } from '../views/PortfolioApp'
 
 const files: { icon: string; label: string; path: FilePath | string; desc: string; external?: boolean }[] = [
   { icon: '📄', label: 'README.md',    path: '/',                   desc: 'intro, projects, stack, contact' },
   { icon: '📄', label: 'milestone.md', path: '/projects/milestone', desc: 'full-stack wedding planning app' },
+  { icon: '🌐', label: 'portfolio-design.html', path: 'design/wireframes.html', desc: 'how this site was designed' },
   { icon: '📄', label: 'radiant.md',   path: '/projects/radiant',   desc: 'skincare routine tracker' },
-  { icon: '📄', label: 'experience.md',path: '/experience',         desc: 'work history' },
+  { icon: '📄', label: 'experience.md',path: '/career/experience',         desc: 'work history' },
   { icon: '📄', label: 'resume.pdf',   path: '/Tran_Le_Resume.pdf', desc: 'download resume', external: true },
 ]
 

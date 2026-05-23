@@ -1,4 +1,4 @@
-import PortfolioApp from '@/components/PortfolioApp'
+import PortfolioApp from '@/views/PortfolioApp'
 
 export default function HomePage() {
   return <PortfolioApp />
