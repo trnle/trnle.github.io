@@ -27,7 +27,7 @@ export default function ReadmeView({ onNavigate }: Props) {
         <Badge label="status"      value={<><PulseDot />open to chat</>} tone="green" />
         <Badge label="based"       value="seattle, WA" />
         <Badge label="stack"       value="ts · react · node · python" tone="yellow" />
-        <Badge label="last commit" value="5/22/26" />
+        <Badge label="last commit" value="5/28/26" />
       </BadgeRow>
 
       <h1><span className="hash">#</span> tran le</h1>
@@ -100,12 +100,11 @@ export default function ReadmeView({ onNavigate }: Props) {
       <table>
         <thead><tr><th>area</th><th>tools</th></tr></thead>
         <tbody>
-          <tr><td>language</td><td>typescript, javascript, python, sql</td></tr>
-          <tr><td>frontend</td><td>react, node.js, vite, css, material ui</td></tr>
-          <tr><td>backend</td><td>node, hono, rest api</td></tr>
-          <tr><td>data</td><td>postgres, sqlalchemy, sequelize, aws, gcp</td></tr>
-          <tr><td>infra</td><td>vercel, git, github actions, docker, k8s</td></tr>
-          <tr><td>design</td><td>storybook, figma, adobe xd, ui/ux</td></tr>
+          <tr><td>frontend</td><td>react, redux, typescript, javascript, ag grid, vite, html, css, material ui, storybook</td></tr>
+          <tr><td>backend & data</td><td>python, java, node, hono, rest api, postgres, bigquery, sql, java, kafka</td></tr>
+          <tr><td>infra</td><td>aws, gcp, k8s, docker, airflow, vercel, terraform, splunk, new relic, git, github actions</td></tr>
+          <tr><td>design</td><td>figma, adobe xd, ui/ux</td></tr>
+          <tr><td>ai</td><td>claude, copilot, gemini, agentic workflows, prototyping</td></tr>
         </tbody>
       </table>
 
@@ -113,24 +112,24 @@ export default function ReadmeView({ onNavigate }: Props) {
       <ul className="exp-list">
         <li className="exp-row">
           <div>
-            <div className="exp-role">Software Engineer I/II</div>
-            <div className="exp-org">Nordstrom</div>
+            <div className="exp-role">software engineer i/ii</div>
+            <div className="exp-org">nordstrom</div>
             <div className="exp-impact">building merchandise planning tooling · full-stack</div>
           </div>
           <div className="exp-period">2021 - 2025</div>
         </li>
         <li className="exp-row">
           <div>
-            <div className="exp-role">Full-Stack Engineering</div>
-            <div className="exp-org">App Academy</div>
+            <div className="exp-role">full-stack engineering</div>
+            <div className="exp-org">app academy</div>
             <div className="exp-impact">24-week bootcamp</div>
           </div>
           <div className="exp-period">2021</div>
         </li>
         <li className="exp-row">
           <div>
-            <div className="exp-role">B.S.A. Biology</div>
-            <div className="exp-org">UT Austin</div>
+            <div className="exp-role">b.s.a. biology</div>
+            <div className="exp-org">ut austin</div>
             <div className="exp-impact">hook &apos;em 🤘🏽</div>
           </div>
           <div className="exp-period">2016 - 2020</div>
@@ -177,7 +176,7 @@ export default function ReadmeView({ onNavigate }: Props) {
       </div>
 
       <div className="doc-footer">
-        <span>deployed on github pages · <a href="https://github.com/trnle" target="_blank" rel="noopener noreferrer">view source ↗</a> · last commit: 5/22/26 · made with care by tran 🐝 · 2026</span>
+        <span>deployed on github pages · <a href="https://github.com/trnle" target="_blank" rel="noopener noreferrer">view source ↗</a> · last commit: 5/28/26 · made with care by tran 🐝 · 2026</span>
       </div>
     </div>
   )

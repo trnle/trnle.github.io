@@ -14,7 +14,7 @@ export default function ExperienceView({ onNavigate }: Props) {
       />
 
       <h1><span className="hash">#</span> experience</h1>
-      <p>Check out the full <a href="/Tran_Le_Resume.pdf" target="_blank" rel="noopener noreferrer">resume pdf ↗</a></p>
+      <p>Check out the <a href="/Tran_Le_Resume.pdf" target="_blank" rel="noopener noreferrer">resume pdf ↗</a></p>
 
       <h2><span className="hash">##</span> nordstrom</h2>
      
@@ -25,22 +25,17 @@ export default function ExperienceView({ onNavigate }: Props) {
       
       <ul>
         <li>Led GCP/BigQuery migration as sole engineer on a hard deadline, rearchitected Python/Airflow pipelines with parallelized
-          Kubernetes pods, reducing runtime 96% (2 hrs to less than 5 min) for 32GB+ datasets. Designed shadow-run validation strategy ensuring
+          Kubernetes pods, reducing runtime 96% (2 hrs to less than 5 min) for 32GB+ datasets. Utilized shadow-run validation strategy ensuring
           zero downtime across 6 mission-critical services.</li>
-        <li>Built a real-time financial planning dashboard used for what-if scenario analysis (React, TypeScript, AG Grid, Redux) for 200+
-          planners, implementing a calculation engine resolving cascading recalculations across 4–5 layers of metric dependencies
-          triggered by single cell edits.</li>
-        <li>Served as subject matter expert for the UI supplier profitability dashboard, authored architecture and solution design docs, led
-          technical feasibility assessments, and owned on-call rotation for production incidents across the platform.</li>
-        <li>Refactored React/Redux state management and AG Grid rendering, profiled render cycles, narrowed component subscriptions
-          to consumed state slices, and configured row virtualization, improving frontend performance by 25% across large financial
-          datasets.</li>
+        <li>Designed backend orchestration workflows (Python, Airflow) for a new operational datastore, defining database schemas and contracts to 
+          support high-throughput daily data ingestion from third-party inventory platform (Toolio).</li>
+        <li>Served as lead engineer for the UI planning dashboard suite, authored architecture and solution design docs, led technical feasibility 
+          assessments, owned on-call rotation (PagerDuty), and deployed E2E test suites (Jest, Cypress) to improve deployment confidence across the platform.</li>
         <li>Owned end-to-end delivery: created release timelines, wrote hour-by-hour go-live runbooks for production deployments, and
           partnered with PMs on epic scoping, task breakdown, and estimation for prioritized initiatives.</li>
-        <li>Built a reusable React/TypeScript component library with WCAG accessibility compliance, standardizing UI patterns across 3
-          production apps and cutting feature delivery time by 15%.</li>
         <li>Engineered full-stack observability (Splunk, New Relic, OpenTelemetry) across 3+ production services, established monitoring
           baselines to detect regressions and API bottlenecks before end-user impact.</li>
+        <li>Owned end-to-end delivery: created release timelines, wrote hour-by-hour go-live runbooks, and partnered with PMs on epic scoping, task breakdown, and estimation for prioritized initiatives.</li>
       </ul>
       <BadgeRow style={{ marginTop: 16 }}>
         <Badge label="role" value="software engineer 1" />
@@ -51,11 +46,19 @@ export default function ExperienceView({ onNavigate }: Props) {
           PostgreSQL schema design, and REST API contracts, eliminating 700+ hours of annual manual effort for 200+ planners.</li>
         <li>Built the supplier profitability dashboard (React, TypeScript, Material UI) to track financial health metrics and vendor
           expectations, designing the UI/UX before any design system existed.</li>
-        <li>Implemented secure role-based access control using React, PostgreSQL, and JWT authentication across internal enterprise
-          systems. Deployed automated integration and E2E tests (Jest, Cypress) across 3 platform applications, improving deployment
-          confidence and reducing regressions.</li>
+        <li>Collaborated on IaC adoption using Terraform, owning S3 bucket configurations, IAM roles, and access policies for production services.</li>
+        <li>Implemented secure role-based access control using React, PostgreSQL, and JWT authentication across planning dashboards.</li>
         <li>Reduced annual cloud infrastructure costs by $42K through Kubernetes autoscaling right-sizing. Contributed to event-driven
           microservices with Java Spring Boot and Kafka for near real-time vendor data ingestion and reporting.</li>
+        <li>Took on emerging technical leadership responsibilities - contributed to architecture decisions, provided estimates for prioritized epics, and grew into end-to-end delivery ownership.</li>
+      </ul>
+      <h2><span className="hash">##</span> recognition</h2>
+      <BadgeRow style={{ marginTop: 16 }}>
+        <Badge label="award" value='nordstrom "customer obsessed" award' />
+        <Badge label="timeline" value="2025" />
+      </BadgeRow>
+      <ul>
+        <li>Recognized for GCP/BigQuery migration leadership and cross-functional stakeholder communication across the Merchandising org.</li>
       </ul>
       <h2><span className="hash">##</span> app academy</h2>
       <BadgeRow style={{ marginTop: 16 }}>
