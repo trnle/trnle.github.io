@@ -23,17 +23,18 @@ export default function RadiantView({ onNavigate }: Props) {
       </BadgeRow>
 
       <blockquote>
-        <strong>TL;DR</strong> — a skincare app where users build AM/PM routines from a product catalog
+        <strong>TL;DR</strong>: A skincare app where users build AM/PM routines from a product catalog
         and log daily journal entries to track skin changes over time. Solo capstone at App Academy.
       </blockquote>
 
       <h2><span className="hash">##</span> what it is</h2>
       <p>
+        This was my App Academy capstone in 2021, one of the first times I approached a project by thinking 
+        about the problem as a user before writing any code. The tech is dated (pre-TypeScript, pre-Vite, Heroku is gone) 
+        but I still take pride in it because it's a nice reminder of where I started out in my career.
         There are a thousand skincare routine apps. Radiant&apos;s take: keep it simple. Users pick
         products for their AM and PM routines, check them off daily, and write a short journal entry.
-        No 20-step routines, no product scoring. This is quite an old project but one I still take pride
-        in because it was one of my first apps where I thought of the problem as a customer and got to
-        create a vision from scratch.
+        No 20-step routines, no product scoring.
       </p>
 
       <h2><span className="hash">##</span> tech</h2>
