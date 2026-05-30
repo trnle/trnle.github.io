@@ -14,7 +14,6 @@ export default function RadiantView({ onNavigate }: Props) {
       />
 
       <h1><span className="hash">#</span> radiant</h1>
-      <span className="lead">a skincare routine tracker. clean, minimal, no overwhelm.</span>
 
       <BadgeRow style={{ marginTop: 16 }}>
         <Badge label="role"     value="solo" />
@@ -54,8 +53,8 @@ export default function RadiantView({ onNavigate }: Props) {
       </ul>
 
       <DocFooter
-        prev={{ label: 'milestone.md', path: '/projects/milestone' }}
-        next={{ label: 'experience.md', path: '/career/experience' }}
+        prev={{ label: 'gh-issue-sync.md', path: '/projects/gh-issue-sync' }}
+        next={{ label: 'experience.md',    path: '/career/experience'      }}
         onNavigate={onNavigate}
       />
     </div>

@@ -13,30 +13,16 @@ interface Props {
 export default function ProjectCard({ onClick, thumb, title, tags, description, links }: Props) {
   return (
     <div className="proj-card" onClick={onClick}>
-      <div className="proj-thumb" style={{ position: 'relative' }}>
+      <div className="proj-thumb" style={{ position: 'relative', overflow: 'hidden', width: '100%', height: '100%' }}>
         {thumb ? (
-          thumb.plain ? (
-            // eslint-disable-next-line @next/next/no-img-element
-            <img
-              src={thumb.src}
-              alt={thumb.alt}
-              style={{
-                position: 'absolute', inset: 0,
-                width: '100%', height: '100%',
-                objectFit: 'cover', objectPosition: 'top',
-                display: 'block',
-              }}
-            />
-          ) : (
-            <Image
-              src={thumb.src}
-              alt={thumb.alt}
-              fill
-              style={{ objectFit: 'cover', objectPosition: 'top' }}
-            />
-          )
-        ) : (
-          <div className="ph-thumb" style={{ position: 'absolute', inset: 0 }}>no image</div>
+          <Image
+            src={thumb.src}
+            alt={thumb.alt}
+            fill
+            style={{ objectFit: 'cover', objectPosition: 'top' }}
+          />) 
+          : (
+        <div className="ph-thumb" style={{ position: 'absolute', inset: 0 }}>no image</div>
         )}
       </div>
 

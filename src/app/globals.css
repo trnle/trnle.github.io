@@ -287,7 +287,6 @@ html {
   font-size: clamp(15px, 1.05vw, 18px);
   color: var(--ink-2);
   margin: var(--s-2) 0;
-  max-width: 70ch;
   line-height: 1.7;
 }
 .md-doc p strong { color: var(--ink); font-weight: 600; }
@@ -300,7 +299,6 @@ html {
   color: var(--ink-2);
   margin: var(--s-2) 0 var(--s-6);
   display: block;
-  max-width: 70ch;
   line-height: 1.65;
 }
 
@@ -490,8 +488,8 @@ html {
   gap: var(--s-3);
   align-items: center;
 }
-.proj-links a { color: var(--accent); text-decoration: none; }
-.proj-links a:hover { text-decoration: underline; }
+.proj-links a { color: var(--accent); text-decoration: underline; text-underline-offset: 3px; }
+.proj-links a:hover { color: var(--accent-2); }
 .proj-links .sep { color: var(--ink-4); }
 
 /* 08 Chip / tag */
@@ -557,7 +555,7 @@ html {
 .photo-frame .photo-cap { font-size: 11px; color: var(--ink-3); }
 
 /* Experience list */
-.exp-list { list-style: none; padding: 0; margin: 0; }
+.md-doc .exp-list { list-style: none; padding: 0; margin: 0; }
 .exp-row {
   display: grid;
   grid-template-columns: 1fr auto;

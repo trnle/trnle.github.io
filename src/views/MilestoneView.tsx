@@ -15,7 +15,6 @@ export default function MilestoneView({ onNavigate }: Props) {
       />
 
       <h1><span className="hash">#</span> milestone</h1>
-      <span className="lead">a full-stack side project, taken from design to ship. typescript · react · node · supabase.</span>
 
       <BadgeRow style={{ marginTop: 16 }}>
         <Badge label="role"     value="solo · design + dev" />
@@ -33,7 +32,7 @@ export default function MilestoneView({ onNavigate }: Props) {
       <h2><span className="hash">##</span> what it is</h2>
       <p>
         Most wedding planning apps give you a static list of tasks with dates. Milestone structures
-        planning into phases with a window-based inbox - tasks are invisible until they enter their
+        planning into phases with a window-based inbox where tasks are invisible until they enter their
         actionable window. The daily view answers one question: what do I do this week?
       </p>
       <h2><span className="hash">##</span> why i built it</h2>
@@ -61,7 +60,7 @@ export default function MilestoneView({ onNavigate }: Props) {
 
       <DocFooter
         prev={{ label: 'README.md',  path: '/' }}
-        next={{ label: 'radiant.md', path: '/projects/radiant' }}
+        next={{ label: 'gh-issue-sync.md', path: '/projects/gh-issue-sync' }}
         onNavigate={onNavigate}
       />
     </div>

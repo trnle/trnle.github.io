@@ -32,9 +32,10 @@ const groups: TreeGroup[] = [
     items: [],
     folder: 'projects/',
     folderItems: [
-      { kind: 'internal', path: '/projects/milestone',        icon: '📄', label: 'milestone.md'        },
+      { kind: 'internal', path: '/projects/milestone',        icon: '📄', label: 'milestone.md'         },
+      { kind: 'internal', path: '/projects/gh-issue-sync',    icon: '📄', label: 'gh-issue-sync.md'      },
       { kind: 'external', href: '/design/wireframes.html',     icon: '🌐', label: 'portfolio-design.html' },
-      { kind: 'internal', path: '/projects/radiant',          icon: '📄', label: 'radiant.md'           },
+      { kind: 'internal', path: '/projects/radiant',          icon: '📄', label: 'radiant.md'            },
     ],
   },
   {

@@ -3,24 +3,27 @@ import { useState, useEffect, useCallback, useRef } from 'react'
 import FileTree from '../components/FileTree'
 import CommandPalette from '../components/CommandPalette'
 
-import ReadmeView    from './ReadmeView'
-import MilestoneView from './MilestoneView'
-import RadiantView   from './RadiantView'
-import ExperienceView from './ExperienceView'
+import ReadmeView       from './ReadmeView'
+import MilestoneView    from './MilestoneView'
+import RadiantView      from './RadiantView'
+import GhIssueSyncView  from './GhIssueSyncView'
+import ExperienceView   from './ExperienceView'
 
 export type FilePath =
   | '/'
   | '/projects/milestone'
+  | '/projects/gh-issue-sync'
   | '/projects/portfolio-design'
   | '/projects/radiant'
   | '/career/experience'
 
 const BREADCRUMBS: Record<FilePath, string> = {
-  '/':                          'README.md',
-  '/projects/milestone':        'projects / milestone.md',
-  '/projects/portfolio-design': 'projects / portfolio-design.html',
-  '/projects/radiant':          'projects / radiant.md',
-  '/career/experience':         'career / experience.md',
+  '/':                           'README.md',
+  '/projects/milestone':         'projects / milestone.md',
+  '/projects/gh-issue-sync':     'projects / gh-issue-sync.md',
+  '/projects/portfolio-design':  'projects / portfolio-design.html',
+  '/projects/radiant':           'projects / radiant.md',
+  '/career/experience':          'career / experience.md',
 }
 
 export default function PortfolioApp() {
@@ -70,11 +73,12 @@ export default function PortfolioApp() {
         />
 
         <main ref={mainRef} style={{ overflowY: 'auto', height: '100vh', scrollbarGutter: 'stable' }}>
-          {active === '/'                          && <ReadmeView     onNavigate={navigate} />}
-          {active === '/projects/milestone'        && <MilestoneView  onNavigate={navigate} />}
-          {active === '/projects/portfolio-design' && <ReadmeView     onNavigate={navigate} />}
-          {active === '/projects/radiant'          && <RadiantView    onNavigate={navigate} />}
-          {active === '/career/experience'         && <ExperienceView onNavigate={navigate} />}
+          {active === '/'                           && <ReadmeView      onNavigate={navigate} />}
+          {active === '/projects/milestone'         && <MilestoneView   onNavigate={navigate} />}
+          {active === '/projects/gh-issue-sync'     && <GhIssueSyncView onNavigate={navigate} />}
+          {active === '/projects/portfolio-design'  && <ReadmeView      onNavigate={navigate} />}
+          {active === '/projects/radiant'           && <RadiantView     onNavigate={navigate} />}
+          {active === '/career/experience'          && <ExperienceView  onNavigate={navigate} />}
         </main>
       </div>
 
