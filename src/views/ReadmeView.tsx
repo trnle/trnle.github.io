@@ -21,7 +21,7 @@ export default function ReadmeView({ onNavigate }: Props) {
         <Badge label="status"      value={<><PulseDot />open to chat</>} tone="green" />
         <Badge label="based"       value="seattle, WA" />
         <Badge label="stack"       value="ts · react · node · python" tone="yellow" />
-        <Badge label="last commit" value="5/28/26" />
+        <Badge label="last commit" value="6/23/26" />
       </BadgeRow>
 
       <h1><span className="hash">#</span> tran le</h1>
@@ -61,7 +61,7 @@ export default function ReadmeView({ onNavigate }: Props) {
       <ContactSection />
 
       <div className="doc-footer">
-        <span>deployed on github pages · <a href="https://github.com/trnle" target="_blank" rel="noopener noreferrer">view source ↗</a> · last commit: 5/28/26 · made with care by tran 🐝 · 2026</span>
+        <span>deployed on github pages · <a href="https://github.com/trnle" target="_blank" rel="noopener noreferrer">view source ↗</a> · last commit: 6/23/26 · made with care by tran 🐝 · 2026</span>
       </div>
     </div>
   )
