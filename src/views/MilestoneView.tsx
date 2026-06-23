@@ -46,17 +46,6 @@ export default function MilestoneView({ onNavigate }: Props) {
       <p style={{ fontFamily: 'var(--font-mono)', fontSize: 11, color: 'var(--ink-3)', marginTop: -12, marginBottom: 20 }}>
         fig 1 · the dashboard, may 2026
       </p>
-      <h2><span className="hash">##</span> the design preview</h2>
-      <blockquote>
-        A design preview lives at{' '}
-        <a href="https://trnle.github.io/milestone-public/" target="_blank" rel="noopener noreferrer">trnle.github.io/milestone-public ↗</a>.
-      </blockquote>
-
-      <h2><span className="hash">##</span> links</h2>
-      <ul>
-        <li><a href="https://trnle.github.io/milestone-public/" target="_blank" rel="noopener noreferrer">design preview ↗</a></li>
-        <li><a href="https://github.com/trnle/milestone-public" target="_blank" rel="noopener noreferrer">github repo (public docs) ↗</a></li>
-      </ul>
 
       <DocFooter
         prev={{ label: 'README.md',  path: '/' }}
