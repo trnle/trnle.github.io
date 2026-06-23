@@ -11,17 +11,11 @@ export default function FeaturedProjects({ onNavigate }: Props) {
       <h2 id="projects"><span className="hash">##</span> featured projects</h2>
       <ProjectCard
         onClick={() => onNavigate('/projects/milestone')}
-        thumb={{ src: '/milestone/dashboard.png', alt: 'Milestone dashboard' }}
+        thumb={{ src: '/milestone/preview.png', alt: 'Milestone preview' }}
         title={<>📌 milestone <span className="live-badge"><PulseDot />in progress</span></>}
         tags={['typescript', 'react', 'vite', 'node', 'supabase', 'design-led', 'ai']}
         description="Full-stack personal project taken from design to development."
-        links={<>
-          <NavLink path="/projects/milestone" onNavigate={onNavigate}>details ↗</NavLink>
-          <Sep />
-          <a href="https://trnle.github.io/milestone-public/" target="_blank" rel="noopener noreferrer" onClick={e => e.stopPropagation()}>design preview ↗</a>
-          <Sep />
-          <a href="https://github.com/trnle/milestone-public" target="_blank" rel="noopener noreferrer" onClick={e => e.stopPropagation()}>repo ↗</a>
-        </>}
+        links={<NavLink path="/projects/milestone" onNavigate={onNavigate}>details ↗</NavLink>}
       />
 
       <ProjectCard

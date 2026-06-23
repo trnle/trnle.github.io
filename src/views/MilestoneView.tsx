@@ -41,7 +41,7 @@ export default function MilestoneView({ onNavigate }: Props) {
         that would surface only what was actionable and stay out of the way the rest of the time. I also wanted something that still had that feel and ease
         or use like a spreadsheet does with cell-to-cell or key navigation.</p>
       <div style={{ position: 'relative', width: '100%', height: 280, margin: '20px 0', border: '1px solid var(--rule)', borderRadius: 'var(--r-md)', overflow: 'hidden', background: 'var(--paper-2)' }}>
-        <Image src="/milestone/dashboard.png" alt="Milestone dashboard" fill style={{ objectFit: 'cover', objectPosition: 'top' }} />
+        <Image src="/milestone/preview.png" alt="Milestone dashboard" fill style={{ objectFit: 'cover', objectPosition: 'top' }} />
       </div>
       <p style={{ fontFamily: 'var(--font-mono)', fontSize: 11, color: 'var(--ink-3)', marginTop: -12, marginBottom: 20 }}>
         fig 1 · the dashboard, may 2026
