@@ -13,7 +13,6 @@ export type FilePath =
   | '/'
   | '/projects/milestone'
   | '/projects/gh-issue-sync'
-  | '/projects/portfolio-design'
   | '/projects/radiant'
   | '/career/experience'
 
@@ -21,7 +20,6 @@ const BREADCRUMBS: Record<FilePath, string> = {
   '/':                           'README.md',
   '/projects/milestone':         'projects / milestone.md',
   '/projects/gh-issue-sync':     'projects / gh-issue-sync.md',
-  '/projects/portfolio-design':  'projects / portfolio-design.html',
   '/projects/radiant':           'projects / radiant.md',
   '/career/experience':          'career / experience.md',
 }
@@ -76,7 +74,6 @@ export default function PortfolioApp() {
           {active === '/'                           && <ReadmeView      onNavigate={navigate} />}
           {active === '/projects/milestone'         && <MilestoneView   onNavigate={navigate} />}
           {active === '/projects/gh-issue-sync'     && <GhIssueSyncView onNavigate={navigate} />}
-          {active === '/projects/portfolio-design'  && <ReadmeView      onNavigate={navigate} />}
           {active === '/projects/radiant'           && <RadiantView     onNavigate={navigate} />}
           {active === '/career/experience'          && <ExperienceView  onNavigate={navigate} />}
         </main>

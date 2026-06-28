@@ -28,15 +28,6 @@ export default function FeaturedProjects({ onNavigate }: Props) {
       />
 
       <ProjectCard
-        onClick={() => window.open('/design/wireframes.html', '_blank', 'noopener')}
-        thumb={{ src: '/design/wireframe.png', alt: 'Portfolio design wireframes', plain: true }}
-        title="📌 this site"
-        tags={['claude', 'next.js', 'css', 'design system', 'github pages']}
-        description="Designed in Claude Design, built with Claude Code. README metaphor with handoff spec, tokens, components, and build checklist."
-        links={<a href="/design/wireframes.html" target="_blank" rel="noopener noreferrer" onClick={e => e.stopPropagation()}>wireframes ↗</a>}
-      />
-
-      <ProjectCard
         onClick={() => onNavigate('/projects/radiant')}
         thumb={{ src: '/radiant/product-board.png', alt: 'Radiant product dashboard' }}
         title="📌 radiant"

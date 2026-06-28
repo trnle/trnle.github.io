@@ -23,25 +23,7 @@ No Tailwind, no Framer Motion, no router - every "page" is a React state switch.
 
 Designed in [Claude Design](https://claude.ai/design), built with Claude Code.
 
-The concept: the portfolio structure mirrors the repo that contains it - markdown files for each section, a file tree as navigation. Four directions were explored before landing on the README metaphor.
-
-The handoff from design -> code was a spec doc covering wireframes, design tokens, typography, component specs, and a build checklist.
-
-### wireframes
-
-**02 · main view - README.md**
-
-![Main view wireframe](public/design/main-view.png)
-
-**03 · project view - milestone.md**
-
-![Case study wireframe](public/design/project-view.png)
-
-**05 · mobile layout**
-
-![Mobile wireframe](public/design/mobile-view.png)
-
-[→ view the full handoff wireframes](https://tranle.dev/design/wireframes.html)
+The concept: the portfolio structure mirrors the repo that contains it - markdown files for each section, a file tree as navigation.
 
 ---
 
