@@ -28,8 +28,7 @@ export default function ExperienceView({ onNavigate }: Props) {
         and cross-functional partnerships with PMs and designers. The work that defined this period was a high-stakes GCP migration and building 
         an operational datastore for ingress data from a third-party inventory platform.</blockquote>
       <ul>
-        <li>Led GCP/BigQuery migration as sole engineer on a hard deadline, rearchitected Python/Airflow pipelines with parallelized
-          Kubernetes pods, reducing runtime 96% (2 hrs to less than 5 min) for 32GB+ datasets.</li>
+        <li>Led GCP/BigQuery migration as sole engineer on a hard deadline, rearchitecting Python/Airflow pipelines with parallelized Kubernetes pods, reducing runtime 96% (2 hrs to under 5 min) for 32GB+ datasets while maintaining zero downtime.</li>
           <ul>
             <li>
               The real challenge wasn't the technical migration, it was doing it safely. Nordstrom's Teradata environment was being deprecated
@@ -39,15 +38,10 @@ export default function ExperienceView({ onNavigate }: Props) {
               informed throughout became the basis for the Customer Obsessed award I received that year.
             </li>
           </ul>
-        <li>Designed backend orchestration workflows (Python, Airflow) for a new operational datastore, defining database schemas and
-          contracts to support high-throughput daily data ingestion from third-party inventory platform (Toolio).</li>
-        <li>Served as lead engineer for the UI planning dashboard suite, authored architecture and solution design docs, led technical
-          feasibility assessments, owned on-call rotation (PagerDuty), and deployed E2E test suites (Jest, Cypress) to improve deployment
-          confidence across the platform.</li>
-        <li>Owned end-to-end delivery: created release timelines, wrote hour-by-hour go-live runbooks for production deployments, and
-          partnered with PMs on epic scoping, task breakdown, and estimation for prioritized initiatives.</li>
-        <li>Engineered full-stack observability (Splunk, New Relic, OpenTelemetry) across 3+ production services, established monitoring
-          baselines to detect regressions and API bottlenecks before end-user impact.</li>
+        <li>Architected a plan-agnostic data ingestion system for Toolio integration, designing a reusable Airflow DAG template that standardized incremental plan file ingestion, read/write orchestration, and plan-specific transformation triggering across plan types, enabling new plan types to be onboarded without rebuilding pipeline logic from scratch; supporting daily financial planning workflows across the merchandising org.</li>
+        <li>Owned stakeholder communication across the GCP migration for 5 product owners, building and maintaining a risk and timeline tracker, running cadenced standups, and proactively surfacing  upstream blockers to keep delivery on track.</li>
+        <li>Led interactive architecture review sessions for operational datastore before presenting to the broader merchandising org; broke down PdM epics into estimated engineering stories and release documentation.</li>
+        <li>Built Cypress E2E test suite covering complete planning workflows (data selection, live recalculations), validating client-side business logic and frontend/backend data parity; caught a precision bug (2 vs 4 decimal places in financial calculations).</li>
       </ul>
 
       <BadgeRow style={{ marginTop: 32 }}>
@@ -60,15 +54,13 @@ export default function ExperienceView({ onNavigate }: Props) {
         frontend implementation, and deployment. It's where I developed my instinct for working backwards from the user and my comfort
         with ownership.</blockquote>
       <ul>
-        <li>Re-engineered Excel-based supplier finance workflows into a full-stack web application — owned React/TypeScript frontend,
-          PostgreSQL schema design, and REST API contracts, eliminating 700+ hours of annual manual effort for 200+ planners.</li>
-        <li>Built the supplier profitability dashboard (React, TypeScript, Material UI) to track financial health metrics and vendor
-          expectations, designing the UI/UX before any design system existed.</li>
-        <li>Collaborated on IaC adoption using Terraform, owning S3 bucket configurations, IAM roles, and access policies for production services.</li>
-        <li>Implemented secure role-based access control using React, PostgreSQL, and JWT authentication across planning dashboards.</li>
-        <li>Reduced annual cloud infrastructure costs by $42K through Kubernetes autoscaling right-sizing. Contributed to event-driven
-          microservices with Java Spring Boot and Kafka for near real-time vendor data ingestion and reporting.</li>
-        <li>Contributed to architecture decisions, provided estimates for prioritized epics, and grew into end-to-end delivery ownership.</li>
+        <li>Re-engineered Excel-based supplier finance workflows into a full-stack web application, owned React/TypeScript frontend, PostgreSQL schema design, and REST API contracts, eliminating 700+ hours of annual manual effort for 200+ planners.</li>
+        <li>Identified upstream data warehouse SLA failures as the cause of stale planning data and shipped a data freshness timestamp indicator, giving planners clear visibility into data recency before committing to financial decisions.</li>
+        <li>Built a full-stack supplier scenario planning application implementing a client-side calculation engine that handled cascading recalculations across 4-5 layers of metric dependencies per cell edit, enabling planners to model monthly scenarios and shift supplier negotiations from reactive year-end review to ongoing data-driven planning.</li>
+        <li>Sole engineer on saved views feature for supplier planning applications, encoding planner form selections (year, department, supplier) as URL state for bookmarkable and refresh-safe views, with same-day staleness detection against the backend in-memory plan cache to determine whether a fresh fetch was needed, eliminating repeated manual form entry for frequently accessed planning views.</li>
+        <li>Migrated manually configured AWS resources (S3 buckets, IAM roles, and access policies) into Terraform for version-controlled infrastructure in GitLab, reducing misconfiguration risk and standardizing provisioning across dev and production environments.</li>
+        <li>Reduced annual cloud infrastructure costs by $42K by analyzing Kubernetes resource utilization across 8+ services in New Relic, right-sizing CPU/memory allocations and configuring HPA thresholds</li>
+        <li>Participated in Kafka topic design reviews, ensuring standardized topic contracts for downstream financial planning data consumers.</li>
       </ul>
       <h2><span className="hash">##</span> recognition</h2>
       <BadgeRow style={{ marginTop: 16 }}>

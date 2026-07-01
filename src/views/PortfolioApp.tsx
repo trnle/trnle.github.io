@@ -24,6 +24,13 @@ const BREADCRUMBS: Record<FilePath, string> = {
   '/career/experience':          'career / experience.md',
 }
 
+// Convert a URL hash (e.g. "#/projects/milestone") into a known FilePath,
+// falling back to the home page for anything unrecognized.
+function pathFromHash(hash: string): FilePath {
+  const path = hash.replace(/^#/, '') || '/'
+  return (path in BREADCRUMBS ? path : '/') as FilePath
+}
+
 export default function PortfolioApp() {
   const [active, setActive]   = useState<FilePath>('/')
   const [cmdOpen, setCmdOpen] = useState(false)
@@ -34,6 +41,25 @@ export default function PortfolioApp() {
     setActive(path)
     setDrawer(false)
     mainRef.current?.scrollTo({ top: 0 })
+    // Reflect the current view in the URL so pages are linkable/shareable.
+    const hash = path === '/' ? '/' : path
+    if (pathFromHash(window.location.hash) !== path) {
+      window.location.hash = hash
+    }
+  }, [])
+
+  // Sync the active view with the URL hash: read it on load and respond to
+  // back/forward navigation and manual hash edits.
+  useEffect(() => {
+    const syncFromHash = () => {
+      const path = pathFromHash(window.location.hash)
+      setActive(path)
+      setDrawer(false)
+      mainRef.current?.scrollTo({ top: 0 })
+    }
+    syncFromHash()
+    window.addEventListener('hashchange', syncFromHash)
+    return () => window.removeEventListener('hashchange', syncFromHash)
   }, [])
 
   useEffect(() => {
